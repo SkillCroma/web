@@ -1,4 +1,4 @@
-package skillcroma.web
+package web.skillcroma
 
 import io.flutter.embedding.android.FlutterActivity
 

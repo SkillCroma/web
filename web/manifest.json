@@ -1,6 +1,6 @@
 {
-    "name": "web",
-    "short_name": "web",
+    "name": "skillcroma",
+    "short_name": "skillcroma",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
