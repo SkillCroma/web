@@ -6,6 +6,9 @@ import 'package:flutter/material.dart';
 // Widgets
 import 'package:skillcroma/widgets/nav_bar_links.dart';
 
+// Functions
+import 'package:skillcroma/functions.dart';
+
 // Values
 import 'package:skillcroma/values.dart';
 
@@ -39,11 +42,11 @@ class HomePage extends StatelessWidget {
           ),
         ),
         actions: [
-          NavBarLinks(label: "Home", onPressed: () {}),
-          NavBarLinks(label: "News", onPressed: () {}),
-          NavBarLinks(label: "Upcoming", onPressed: () {}),
-          NavBarLinks(label: "Leaderboards", onPressed: () {}),
-          NavBarLinks(label: "Contact", onPressed: () {}),
+          NavBarLinks(label: "Home", page: pageName.home),
+          NavBarLinks(label: "News", page: pageName.news),
+          NavBarLinks(label: "Upcoming", page: pageName.upcoming),
+          NavBarLinks(label: "Leaderboards", page: pageName.leaderboards),
+          NavBarLinks(label: "Contact", page: pageName.contact),
           SizedBox(width: 24),
         ],
       ),
@@ -158,13 +161,25 @@ class HomePage extends StatelessWidget {
                     Column(
                       mainAxisSize: .min,
                       children: [
-                        SocialMedia(icon: HugeIconsStroke.newTwitter),
+                        SocialMedia(
+                          socialMedia: socialMediaTypes.twitter,
+                          icon: HugeIconsStroke.newTwitter,
+                        ),
                         const SizedBox(height: 8),
-                        SocialMedia(icon: HugeIconsStroke.linkedin02),
+                        SocialMedia(
+                          socialMedia: socialMediaTypes.linkedIn,
+                          icon: HugeIconsStroke.linkedin02,
+                        ),
                         const SizedBox(height: 8),
-                        SocialMedia(icon: HugeIconsStroke.instagram),
+                        SocialMedia(
+                          socialMedia: socialMediaTypes.instagram,
+                          icon: HugeIconsStroke.instagram,
+                        ),
                         const SizedBox(height: 8),
-                        SocialMedia(icon: HugeIconsStroke.facebook02),
+                        SocialMedia(
+                          socialMedia: socialMediaTypes.facebook,
+                          icon: HugeIconsStroke.facebook02,
+                        ),
                       ],
                     ),
                   ],
@@ -266,9 +281,9 @@ class HomePage extends StatelessWidget {
                     Column(
                       crossAxisAlignment: .end,
                       children: [
-                        FooterLink(label: "Programmes"),
-                        FooterLink(label: "Products"),
-                        FooterLink(label: "About"),
+                        FooterLink(label: "Programmes", page: .programmes),
+                        FooterLink(label: "Products", page: .products),
+                        FooterLink(label: "About", page: .about),
                         const SizedBox(height: 4),
                         SizedBox(
                           width: size.width * 0.15,
@@ -277,10 +292,13 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 4),
-                        FooterLink(label: "X (formerly Twitter)"),
-                        FooterLink(label: "LinkedIn"),
-                        FooterLink(label: "Instagram"),
-                        FooterLink(label: "Facebook"),
+                        FooterLink(
+                          label: "X (formerly Twitter)",
+                          socialMedia: .twitter,
+                        ),
+                        FooterLink(label: "LinkedIn", socialMedia: .linkedIn),
+                        FooterLink(label: "Instagram", socialMedia: .instagram),
+                        FooterLink(label: "Facebook", socialMedia: .facebook),
                       ],
                     ),
                   ],
@@ -320,9 +338,16 @@ class HomePage extends StatelessWidget {
 
 // Footer Link
 class FooterLink extends StatelessWidget {
-  const FooterLink({super.key, required this.label});
+  const FooterLink({
+    super.key,
+    required this.label,
+    this.socialMedia,
+    this.page,
+  });
 
   final String label;
+  final socialMediaTypes? socialMedia;
+  final pageName? page;
 
   @override
   Widget build(BuildContext context) {
@@ -331,7 +356,14 @@ class FooterLink extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: TextButton(
-        onPressed: () {},
+        onPressed: () {
+          if (page != null) {
+            navigatePage(page!);
+          }
+          if (socialMedia != null) {
+            launchSocialMedia(socialMedia!);
+          }
+        },
         child: Row(
           children: [
             Text(
@@ -405,15 +437,16 @@ class AboutImages extends StatelessWidget {
 
 // Social Media
 class SocialMedia extends StatelessWidget {
-  const SocialMedia({super.key, required this.icon});
+  const SocialMedia({super.key, required this.socialMedia, required this.icon});
 
+  final socialMediaTypes socialMedia;
   final IconData icon;
 
   @override
   Widget build(BuildContext context) {
     var colorScheme = Theme.of(context).colorScheme;
     return IconButton(
-      onPressed: () {},
+      onPressed: () => launchSocialMedia(socialMedia),
       style: IconButton.styleFrom(
         backgroundColor: colorScheme.surfaceContainer,
         foregroundColor: colorScheme.onSurface,
