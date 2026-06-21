@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "715790868859",
+    "project_id": "skillcroma-web",
+    "storage_bucket": "skillcroma-web.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715790868859:android:19cf8f61b751353d5d5dde",
+        "android_client_info": {
+          "package_name": "web.skillcroma"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCylrj6je3CpBRewzIoYFrKqySS98u-PF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

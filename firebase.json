@@ -1,0 +1,55 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "skillcroma-web",
+          "appId": "1:715790868859:android:19cf8f61b751353d5d5dde",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "skillcroma-web",
+          "appId": "1:715790868859:ios:fac3e8a45c127ee15d5dde",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "skillcroma-web",
+          "appId": "1:715790868859:ios:fac3e8a45c127ee15d5dde",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "skillcroma-web",
+          "configurations": {
+            "android": "1:715790868859:android:19cf8f61b751353d5d5dde",
+            "ios": "1:715790868859:ios:fac3e8a45c127ee15d5dde",
+            "macos": "1:715790868859:ios:fac3e8a45c127ee15d5dde",
+            "web": "1:715790868859:web:65fb5fbbab98a3445d5dde",
+            "windows": "1:715790868859:web:73769c1d4a8237d05d5dde"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
