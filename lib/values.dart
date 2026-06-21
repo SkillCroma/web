@@ -1,0 +1,1 @@
+var subscriptionValue = 1000;
