@@ -29,7 +29,7 @@ class FooterLink extends StatelessWidget {
       child: TextButton(
         onPressed: () {
           if (page != null) {
-            navigatePage(page!);
+            navigatePage(context, page!);
           }
           if (socialMedia != null) {
             launchSocialMedia(socialMedia!);

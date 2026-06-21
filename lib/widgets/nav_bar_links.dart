@@ -24,17 +24,20 @@ class NavBarLinks extends StatelessWidget {
     var colorScheme = Theme.of(context).colorScheme;
     var textTheme = Theme.of(context).textTheme;
 
-    return TextButton(
-      onPressed: () => navigatePage(page),
-      style: TextButton.styleFrom(
-        backgroundColor: isCurrentPage
-            ? Theme.of(context).colorScheme.surfaceContainer
-            : Colors.transparent,
-      ),
-      child: Text(
-        label,
-        style: textTheme.titleMedium?.copyWith(
-          color: colorScheme.onPrimaryContainer,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+      child: TextButton(
+        onPressed: () => navigatePage(context, page),
+        style: TextButton.styleFrom(
+          backgroundColor: isCurrentPage
+              ? Theme.of(context).colorScheme.surfaceContainer
+              : Colors.transparent,
+        ),
+        child: Text(
+          label,
+          style: textTheme.titleMedium?.copyWith(
+            color: colorScheme.onPrimaryContainer,
+          ),
         ),
       ),
     );

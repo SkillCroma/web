@@ -287,17 +287,17 @@ class HomePage extends StatelessWidget {
                 Row(
                   children: [
                     TextButton(
-                      onPressed: () => navigatePage(.privacyPolicies),
+                      onPressed: () => navigatePage(context, .privacyPolicies),
                       child: Text("Privacy Policies"),
                     ),
                     const SizedBox(width: 48),
                     TextButton(
-                      onPressed: () => navigatePage(.termsAndConditions),
+                      onPressed: () => navigatePage(context, .termsAndConditions),
                       child: Text("Terms & Conditions"),
                     ),
                     Spacer(),
                     TextButton(
-                      onPressed: () => navigatePage(.mail),
+                      onPressed: () => navigatePage(context, .mail),
                       child: Text("hello@skillcroma.com"),
                     ),
                     const SizedBox(width: 48),

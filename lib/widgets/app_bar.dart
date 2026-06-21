@@ -32,7 +32,7 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: false,
       backgroundColor: colorScheme.primaryContainer,
       title: IconButton(
-        onPressed: () => navigatePage(.home),
+        onPressed: () => navigatePage(context, .home),
         icon: Row(
           mainAxisSize: .min,
           children: [
