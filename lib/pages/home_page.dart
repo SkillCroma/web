@@ -31,9 +31,9 @@ class HomePage extends StatelessWidget {
         centerTitle: false,
         backgroundColor: colorScheme.primaryContainer,
         title: IconButton(
-          onPressed: () {},
+          onPressed: () => navigatePage(.home),
           icon: Row(
-            mainAxisSize: MainAxisSize.min,
+            mainAxisSize: .min,
             children: [
               SvgPicture.asset("assets/$brightness/icon.svg", height: 32),
               const SizedBox(width: 8),
@@ -42,11 +42,11 @@ class HomePage extends StatelessWidget {
           ),
         ),
         actions: [
-          NavBarLinks(label: "Home", page: pageName.home),
-          NavBarLinks(label: "News", page: pageName.news),
-          NavBarLinks(label: "Upcoming", page: pageName.upcoming),
-          NavBarLinks(label: "Leaderboards", page: pageName.leaderboards),
-          NavBarLinks(label: "Contact", page: pageName.contact),
+          NavBarLinks(label: "Home", page: .home),
+          NavBarLinks(label: "News", page: .news),
+          NavBarLinks(label: "Upcoming", page: .upcoming),
+          NavBarLinks(label: "Leaderboards", page: .leaderboards),
+          NavBarLinks(label: "Contact", page: .contact),
           SizedBox(width: 24),
         ],
       ),
@@ -309,17 +309,17 @@ class HomePage extends StatelessWidget {
                 Row(
                   children: [
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () => navigatePage(.privacyPolicies),
                       child: Text("Privacy Policies"),
                     ),
                     const SizedBox(width: 48),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () => navigatePage(.termsAndConditions),
                       child: Text("Terms & Conditions"),
                     ),
                     Spacer(),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () => navigatePage(.mail),
                       child: Text("hello@skillcroma.com"),
                     ),
                     const SizedBox(width: 48),
