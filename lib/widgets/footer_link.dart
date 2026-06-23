@@ -17,8 +17,8 @@ class FooterLink extends StatelessWidget {
   });
 
   final String label;
-  final socialMediaTypes? socialMedia;
-  final pageName? page;
+  final SocialMediaTypes? socialMedia;
+  final PageName? page;
 
   @override
   Widget build(BuildContext context) {

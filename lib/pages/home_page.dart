@@ -8,27 +8,52 @@ import 'package:skillcroma/widgets/numbers_container.dart';
 import 'package:skillcroma/widgets/carousel_text.dart';
 import 'package:skillcroma/widgets/social_media.dart';
 import 'package:skillcroma/widgets/about_images.dart';
-import 'package:skillcroma/widgets/footer_link.dart';
 import 'package:skillcroma/widgets/app_bar.dart';
+import 'package:skillcroma/widgets/footer.dart';
 
 // Functions
-import 'package:skillcroma/functions.dart';
 
 // Values
 import 'package:skillcroma/values.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  final ScrollController _scrollController = ScrollController();
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  void _scrollToFooter() {
+    _scrollController.animateTo(
+      _scrollController.position.maxScrollExtent,
+      duration: const Duration(milliseconds: 800),
+      curve: Curves.easeInOut,
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
     var colorScheme = Theme.of(context).colorScheme;
     var textTheme = Theme.of(context).textTheme;
     var size = MediaQuery.of(context).size;
+    bool isDesktop = size.width > 800;
 
     return Scaffold(
-      appBar: NavBar(currentPage: .home),
+      appBar: NavBar(
+        currentPage: PageName.home,
+        onContactTapped: _scrollToFooter,
+      ),
       body: ListView(
+        controller: _scrollController,
         children: [
           Stack(
             children: [
@@ -39,7 +64,7 @@ class HomePage extends StatelessWidget {
                 height: size.height - kToolbarHeight,
               ),
               Container(
-                padding: const EdgeInsets.all(80),
+                padding: EdgeInsets.all(isDesktop ? 80 : 24),
                 height: size.height - kToolbarHeight,
                 width: size.width,
                 decoration: BoxDecoration(
@@ -57,7 +82,10 @@ class HomePage extends StatelessWidget {
                     CarouselQuoteText(text: "WHEN YOU HAVE FULL"),
                     CarouselQuoteText(text: "POTENTIAL"),
                     const SizedBox(height: 40),
-                    Row(
+                    Wrap(
+                      spacing: 24,
+                      runSpacing: 24,
+                      crossAxisAlignment: WrapCrossAlignment.center,
                       children: [
                         ElevatedButton(
                           onPressed: () {},
@@ -74,7 +102,6 @@ class HomePage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        const SizedBox(width: 24),
                         Column(
                           crossAxisAlignment: .start,
                           mainAxisSize: .min,
@@ -95,13 +122,15 @@ class HomePage extends StatelessWidget {
           ),
           Container(
             width: size.width,
-            height: size.height * 0.75,
-            padding: const EdgeInsets.all(80),
+            padding: EdgeInsets.all(isDesktop ? 80 : 24),
             color: colorScheme.surfaceContainerLowest,
             child: Column(
               children: [
-                Row(
-                  crossAxisAlignment: .start,
+                Wrap(
+                  spacing: 40,
+                  runSpacing: 40,
+                  alignment: WrapAlignment.spaceBetween,
+                  crossAxisAlignment: WrapCrossAlignment.start,
                   children: [
                     Text(
                       "About SkillCroma",
@@ -112,83 +141,93 @@ class HomePage extends StatelessWidget {
                         decorationColor: colorScheme.onSurface,
                       ),
                     ),
-                    Spacer(),
                     Column(
-                      crossAxisAlignment: .start,
+                      crossAxisAlignment: isDesktop ? .end : .start,
                       mainAxisSize: .min,
                       children: [
                         SizedBox(
-                          width: size.width * 0.35,
+                          width: isDesktop ? size.width * 0.35 : null,
                           child: CarouselQuoteText(
                             text: "SPEED IS MORE",
-                            textAlign: .end,
+                            textAlign: isDesktop ? .end : .start,
                           ),
                         ),
                         SizedBox(
-                          width: size.width * 0.35,
+                          width: isDesktop ? size.width * 0.35 : null,
                           child: CarouselQuoteText(
                             text: "THAN MOTION; IT",
-                            textAlign: .end,
+                            textAlign: isDesktop ? .end : .start,
                           ),
                         ),
                         CarouselQuoteText(text: "IS INTELLIGENCE IN"),
                         CarouselQuoteText(text: "ACTION"),
                       ],
                     ),
-                    Spacer(flex: 2),
                     Column(
                       mainAxisSize: .min,
                       children: [
                         SocialMedia(
-                          socialMedia: socialMediaTypes.twitter,
+                          socialMedia: SocialMediaTypes.twitter,
                           icon: HugeIconsStroke.newTwitter,
                         ),
                         const SizedBox(height: 8),
                         SocialMedia(
-                          socialMedia: socialMediaTypes.linkedIn,
+                          socialMedia: SocialMediaTypes.linkedIn,
                           icon: HugeIconsStroke.linkedin02,
                         ),
                         const SizedBox(height: 8),
                         SocialMedia(
-                          socialMedia: socialMediaTypes.instagram,
+                          socialMedia: SocialMediaTypes.instagram,
                           icon: HugeIconsStroke.instagram,
                         ),
                         const SizedBox(height: 8),
                         SocialMedia(
-                          socialMedia: socialMediaTypes.facebook,
+                          socialMedia: SocialMediaTypes.facebook,
                           icon: HugeIconsStroke.facebook02,
                         ),
                       ],
                     ),
                   ],
                 ),
-                Row(
+                SizedBox(height: 40),
+                Wrap(
+                  spacing: 40,
+                  runSpacing: 40,
+                  alignment: WrapAlignment.center,
+                  crossAxisAlignment: WrapCrossAlignment.center,
                   children: [
                     SizedBox(
-                      width: size.width * 0.35,
+                      width: isDesktop ? size.width * 0.35 : size.width,
                       child: Text(
                         "At SkillCroma, we believe every young young athlete deserves the right opportunity to shine.Many talented players have passion and potential but lack proper guidance and exposure.Our mission is to identify genuine talent through professional performance analysis and skill evaluation.",
                         style: textTheme.bodyLarge,
                       ),
                     ),
-                    Spacer(),
-                    AboutImages(image: "assets/common/About_Image_1.png"),
-                    const SizedBox(width: 16),
-                    AboutImages(image: "assets/common/About_Image_2.png"),
+                    Wrap(
+                      spacing: 16,
+                      runSpacing: 16,
+                      alignment: WrapAlignment.center,
+                      children: [
+                        AboutImages(image: "assets/common/About_Image_1.png"),
+                        AboutImages(image: "assets/common/About_Image_2.png"),
+                      ],
+                    ),
                   ],
                 ),
               ],
             ),
           ),
           Container(
-            height: size.height - kToolbarHeight,
             width: size.width,
-            padding: const EdgeInsets.all(80),
+            padding: EdgeInsets.all(isDesktop ? 80 : 24),
             color: colorScheme.surface,
-            child: Row(
+            child: Wrap(
+              spacing: 50,
+              runSpacing: 50,
+              crossAxisAlignment: WrapCrossAlignment.center,
               children: [
                 SizedBox(
-                  width: size.width * 0.45,
+                  width: isDesktop ? size.width * 0.45 : size.width,
                   child: Column(
                     crossAxisAlignment: .start,
                     mainAxisAlignment: .start,
@@ -204,9 +243,10 @@ class HomePage extends StatelessWidget {
                         "Our proven track record speaks for itself. Join other organizations who have transformed their performance",
                         style: textTheme.titleLarge,
                       ),
-                      Spacer(),
-                      Row(
-                        mainAxisSize: .min,
+                      const SizedBox(height: 40),
+                      Wrap(
+                        spacing: 24,
+                        runSpacing: 24,
                         children: [
                           NumbersContainer(
                             title: "20 +",
@@ -214,7 +254,6 @@ class HomePage extends StatelessWidget {
                             text:
                                 "Professional or Amateur Athelets trust our platform",
                           ),
-                          const SizedBox(width: 24),
                           NumbersContainer(
                             title: "50 +",
                             subtitle: "Championships",
@@ -226,87 +265,18 @@ class HomePage extends StatelessWidget {
                     ],
                   ),
                 ),
-                const SizedBox(width: 50),
                 ClipRRect(
                   borderRadius: .circular(48),
                   child: Image.asset(
                     "assets/common/By_The_Numbers.png",
                     fit: .cover,
-                    height: double.infinity,
-                    width: size.width * 0.4,
+                    width: isDesktop ? size.width * 0.4 : size.width,
                   ),
                 ),
               ],
             ),
           ),
-          Container(
-            height: size.height * 0.75,
-            width: size.width,
-            color: colorScheme.surfaceContainerHighest,
-            padding: .all(80),
-            child: Column(
-              children: [
-                Row(
-                  children: [
-                    Text(
-                      "SKILLCROMA",
-                      style: textTheme.displayLarge?.copyWith(
-                        fontSize: 120,
-                        fontWeight: .bold,
-                      ),
-                    ),
-                    Spacer(),
-                    Column(
-                      crossAxisAlignment: .end,
-                      children: [
-                        FooterLink(label: "Programmes", page: .programmes),
-                        FooterLink(label: "Products", page: .products),
-                        FooterLink(label: "About", page: .about),
-                        const SizedBox(height: 4),
-                        SizedBox(
-                          width: size.width * 0.15,
-                          child: Divider(
-                            color: colorScheme.outline.withAlpha(125),
-                          ),
-                        ),
-                        const SizedBox(height: 4),
-                        FooterLink(
-                          label: "X (formerly Twitter)",
-                          socialMedia: .twitter,
-                        ),
-                        FooterLink(label: "LinkedIn", socialMedia: .linkedIn),
-                        FooterLink(label: "Instagram", socialMedia: .instagram),
-                        FooterLink(label: "Facebook", socialMedia: .facebook),
-                      ],
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 64),
-                Divider(color: colorScheme.outline.withAlpha(125)),
-                const SizedBox(height: 64),
-                Row(
-                  children: [
-                    TextButton(
-                      onPressed: () => navigatePage(context, .privacyPolicies),
-                      child: Text("Privacy Policies"),
-                    ),
-                    const SizedBox(width: 48),
-                    TextButton(
-                      onPressed: () => navigatePage(context, .termsAndConditions),
-                      child: Text("Terms & Conditions"),
-                    ),
-                    Spacer(),
-                    TextButton(
-                      onPressed: () => navigatePage(context, .mail),
-                      child: Text("hello@skillcroma.com"),
-                    ),
-                    const SizedBox(width: 48),
-                    Text("© Design by Santhosh Sivakumar, 2026"),
-                  ],
-                ),
-              ],
-            ),
-          ),
+          const Footer(),
         ],
       ),
     );

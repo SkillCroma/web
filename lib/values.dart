@@ -1,4 +1,4 @@
-enum pageName {
+enum PageName {
   home('/home'),
   about('/about'),
   news('/news'),
@@ -12,9 +12,9 @@ enum pageName {
   mail('/mail');
 
   final String name;
-  const pageName(this.name);
+  const PageName(this.name);
 }
 
-enum socialMediaTypes { twitter, linkedIn, instagram, facebook, youtube }
+enum SocialMediaTypes { twitter, linkedIn, instagram, facebook, youtube }
 
-var subscriptionValue = 1000;
+int subscriptionValue = 1000;

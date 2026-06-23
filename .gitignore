@@ -46,3 +46,14 @@ app.*.map.json
 
 # FVM Version Cache
 .fvm/
+
+# Docs
+/Docs
+
+# Agents
+.agents
+.trae
+.vscode
+/graphify-out
+skills-lock.json
+Agents.md

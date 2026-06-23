@@ -12,9 +12,14 @@ import 'package:skillcroma/values.dart';
 import 'package:skillcroma/functions.dart';
 
 class NavBar extends StatelessWidget implements PreferredSizeWidget {
-  const NavBar({super.key, required this.currentPage});
+  const NavBar({
+    super.key,
+    required this.currentPage,
+    this.onContactTapped,
+  });
 
-  final pageName currentPage;
+  final PageName currentPage;
+  final VoidCallback? onContactTapped;
 
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
@@ -32,9 +37,9 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: false,
       backgroundColor: colorScheme.primaryContainer,
       title: IconButton(
-        onPressed: () => navigatePage(context, .home),
+        onPressed: () => navigatePage(context, PageName.home),
         icon: Row(
-          mainAxisSize: .min,
+          mainAxisSize: MainAxisSize.min,
           children: [
             SvgPicture.asset("assets/$brightness/icon.svg", height: 32),
             const SizedBox(width: 8),
@@ -42,34 +47,71 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
           ],
         ),
       ),
-      actions: [
-        NavBarLinks(
-          label: "Home",
-          page: .home,
-          isCurrentPage: currentPage == .home,
-        ),
-        NavBarLinks(
-          label: "News",
-          page: .news,
-          isCurrentPage: currentPage == .news,
-        ),
-        NavBarLinks(
-          label: "Upcoming",
-          page: .upcoming,
-          isCurrentPage: currentPage == .upcoming,
-        ),
-        NavBarLinks(
-          label: "Leaderboards",
-          page: .leaderboards,
-          isCurrentPage: currentPage == .leaderboards,
-        ),
-        NavBarLinks(
-          label: "Contact",
-          page: .contact,
-          isCurrentPage: currentPage == .contact,
-        ),
-        SizedBox(width: 24),
-      ],
+      actions: MediaQuery.of(context).size.width > 800
+          ? [
+              NavBarLinks(
+                label: "Home",
+                page: PageName.home,
+                isCurrentPage: currentPage == PageName.home,
+              ),
+              NavBarLinks(
+                label: "News",
+                page: PageName.news,
+                isCurrentPage: currentPage == PageName.news,
+              ),
+              NavBarLinks(
+                label: "Upcoming",
+                page: PageName.upcoming,
+                isCurrentPage: currentPage == PageName.upcoming,
+              ),
+              NavBarLinks(
+                label: "Leaderboards",
+                page: PageName.leaderboards,
+                isCurrentPage: currentPage == PageName.leaderboards,
+              ),
+              NavBarLinks(
+                label: "Contact",
+                page: PageName.contact,
+                isCurrentPage: currentPage == PageName.contact,
+                onTap: onContactTapped,
+              ),
+              SizedBox(width: 24),
+            ]
+          : [
+              PopupMenuButton<PageName>(
+                icon: Icon(Icons.menu, color: colorScheme.onPrimaryContainer),
+                onSelected: (page) {
+                  if (page == PageName.contact && onContactTapped != null) {
+                    onContactTapped!();
+                  } else {
+                    navigatePage(context, page);
+                  }
+                },
+                itemBuilder: (BuildContext context) => <PopupMenuEntry<PageName>>[
+                  PopupMenuItem<PageName>(
+                    value: PageName.home,
+                    child: Text('Home'),
+                  ),
+                  PopupMenuItem<PageName>(
+                    value: PageName.news,
+                    child: Text('News'),
+                  ),
+                  PopupMenuItem<PageName>(
+                    value: PageName.upcoming,
+                    child: Text('Upcoming'),
+                  ),
+                  PopupMenuItem<PageName>(
+                    value: PageName.leaderboards,
+                    child: Text('Leaderboards'),
+                  ),
+                  PopupMenuItem<PageName>(
+                    value: PageName.contact,
+                    child: Text('Contact'),
+                  ),
+                ],
+              ),
+              SizedBox(width: 8),
+            ],
     );
   }
 }

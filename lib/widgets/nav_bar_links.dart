@@ -13,11 +13,13 @@ class NavBarLinks extends StatelessWidget {
     required this.label,
     required this.page,
     required this.isCurrentPage,
+    this.onTap,
   });
 
   final String label;
-  final pageName page;
+  final PageName page;
   final bool isCurrentPage;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,7 @@ class NavBarLinks extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       child: TextButton(
-        onPressed: () => navigatePage(context, page),
+        onPressed: onTap ?? () => navigatePage(context, page),
         style: TextButton.styleFrom(
           backgroundColor: isCurrentPage
               ? Theme.of(context).colorScheme.surfaceContainer

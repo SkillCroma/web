@@ -6,14 +6,14 @@ import 'dart:developer';
 import 'package:skillcroma/values.dart';
 
 // NAVIGATIONS
-void navigatePage(context, pageName page) {
+void navigatePage(BuildContext context, PageName page) {
   // TODO: Implement function
   Navigator.pushReplacementNamed(context, page.name);
   log(page.name, name: "Nav");
 }
 
 // SOCIAL MEDIA
-void launchSocialMedia(socialMediaTypes social) {
+void launchSocialMedia(SocialMediaTypes social) {
   // TODO: Implement function
   log(social.name, name: "Soc");
 }

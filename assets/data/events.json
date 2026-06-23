@@ -1,0 +1,222 @@
+[
+  {
+    "id": "1",
+    "bannerImage": "assets/common/carousel_image_1.png",
+    "title": "Flutter Web Masterclass",
+    "description": "An intensive workshop on building responsive Flutter web applications with modern UI principles.",
+    "date": "SAT, 18 JAN",
+    "timestamp": "2026-01-18T09:00:00Z",
+    "startTime": "9:00 AM",
+    "endTime": "11:00 AM",
+    "location": "New York"
+  },
+  {
+    "id": "2",
+    "bannerImage": "assets/common/About_Image_1.png",
+    "title": "Advanced State Management",
+    "description": "Deep dive into Provider, Riverpod, and Bloc to scale your enterprise applications effortlessly.",
+    "date": "SUN, 19 JAN",
+    "timestamp": "2026-01-19T10:00:00Z",
+    "startTime": "10:00 AM",
+    "endTime": "1:00 PM",
+    "location": "San Francisco"
+  },
+  {
+    "id": "3",
+    "bannerImage": "assets/common/About_Image_2.png",
+    "title": "UI/UX Pro Design Thinking",
+    "description": "Learn to design breathtaking, conversion-focused user interfaces with Material 3 guidelines.",
+    "date": "TUE, 21 JAN",
+    "timestamp": "2026-01-21T14:00:00Z",
+    "startTime": "2:00 PM",
+    "endTime": "4:00 PM",
+    "location": "London"
+  },
+  {
+    "id": "4",
+    "bannerImage": "assets/common/carousel_image_1.png",
+    "title": "Firebase Authentication Patterns",
+    "description": "Secure your apps using best practices with Firebase Auth, OAuth, and custom claims.",
+    "date": "THU, 23 JAN",
+    "timestamp": "2026-01-23T11:00:00Z",
+    "startTime": "11:00 AM",
+    "endTime": "12:30 PM",
+    "location": "Remote"
+  },
+  {
+    "id": "5",
+    "bannerImage": "assets/common/About_Image_1.png",
+    "title": "Fullstack Dart with Serverpod",
+    "description": "Explore writing server-side logic in Dart and sharing models across backend and frontend seamlessly.",
+    "date": "MON, 27 JAN",
+    "timestamp": "2026-01-27T09:00:00Z",
+    "startTime": "9:00 AM",
+    "endTime": "5:00 PM",
+    "location": "Berlin"
+  },
+  {
+    "id": "6",
+    "bannerImage": "assets/common/About_Image_2.png",
+    "title": "Animations & Micro-interactions",
+    "description": "Bring your app to life with custom implicit and explicit animations to delight users.",
+    "date": "WED, 29 JAN",
+    "timestamp": "2026-01-29T15:00:00Z",
+    "startTime": "3:00 PM",
+    "endTime": "6:00 PM",
+    "location": "New York"
+  },
+  {
+    "id": "7",
+    "bannerImage": "assets/common/carousel_image_1.png",
+    "title": "CI/CD for Mobile Apps",
+    "description": "Automate your deployments using GitHub Actions and Fastlane to quickly ship to the stores.",
+    "date": "FRI, 31 JAN",
+    "timestamp": "2026-01-31T10:00:00Z",
+    "startTime": "10:00 AM",
+    "endTime": "1:00 PM",
+    "location": "San Francisco"
+  },
+  {
+    "id": "8",
+    "bannerImage": "assets/common/About_Image_1.png",
+    "title": "Performance Profiling",
+    "description": "Find and eliminate jank in your Flutter apps by mastering the DevTools timeline and memory profiler.",
+    "date": "TUE, 03 FEB",
+    "timestamp": "2026-02-03T14:00:00Z",
+    "startTime": "2:00 PM",
+    "endTime": "3:30 PM",
+    "location": "Remote"
+  },
+  {
+    "id": "9",
+    "bannerImage": "assets/common/About_Image_2.png",
+    "title": "GraphQL and Flutter",
+    "description": "Integrate robust GraphQL clients into your Flutter applications with caching strategies.",
+    "date": "THU, 05 FEB",
+    "timestamp": "2026-02-05T09:00:00Z",
+    "startTime": "9:00 AM",
+    "endTime": "11:00 AM",
+    "location": "London"
+  },
+  {
+    "id": "10",
+    "bannerImage": "assets/common/carousel_image_1.png",
+    "title": "Accessibility Deep Dive",
+    "description": "Ensure your app is usable by everyone. Learn Semantics, contrast rules, and screen reader testing.",
+    "date": "MON, 09 FEB",
+    "timestamp": "2026-02-09T13:00:00Z",
+    "startTime": "1:00 PM",
+    "endTime": "4:00 PM",
+    "location": "Berlin"
+  },
+  {
+    "id": "11",
+    "bannerImage": "assets/common/About_Image_1.png",
+    "title": "Testing Strategies",
+    "description": "A comprehensive look at unit, widget, and integration testing for unbreakable codebases.",
+    "date": "WED, 11 FEB",
+    "timestamp": "2026-02-11T10:00:00Z",
+    "startTime": "10:00 AM",
+    "endTime": "2:00 PM",
+    "location": "New York"
+  },
+  {
+    "id": "12",
+    "bannerImage": "assets/common/About_Image_2.png",
+    "title": "Building Desktop Apps",
+    "description": "Migrating and adapting mobile UI to feel native on Windows, macOS, and Linux platforms.",
+    "date": "SAT, 14 FEB",
+    "timestamp": "2026-02-14T09:00:00Z",
+    "startTime": "9:00 AM",
+    "endTime": "12:00 PM",
+    "location": "San Francisco"
+  },
+  {
+    "id": "13",
+    "bannerImage": "assets/common/carousel_image_1.png",
+    "title": "Monorepos in Dart",
+    "description": "Managing complex projects with Melos to scale huge codebases efficiently.",
+    "date": "TUE, 17 FEB",
+    "timestamp": "2026-02-17T15:00:00Z",
+    "startTime": "3:00 PM",
+    "endTime": "5:00 PM",
+    "location": "Remote"
+  },
+  {
+    "id": "14",
+    "bannerImage": "assets/common/About_Image_1.png",
+    "title": "Supabase Realtime Database",
+    "description": "Build real-time chat applications utilizing PostgreSQL's powerful row level security.",
+    "date": "THU, 19 FEB",
+    "timestamp": "2026-02-19T11:00:00Z",
+    "startTime": "11:00 AM",
+    "endTime": "1:00 PM",
+    "location": "London"
+  },
+  {
+    "id": "15",
+    "bannerImage": "assets/common/About_Image_2.png",
+    "title": "Flutter Architecture Masterclass",
+    "description": "Defining clean architecture principles and layer separation for ten-year codebases.",
+    "date": "MON, 23 FEB",
+    "timestamp": "2026-02-23T09:00:00Z",
+    "startTime": "9:00 AM",
+    "endTime": "5:00 PM",
+    "location": "Berlin"
+  },
+  {
+    "id": "16",
+    "bannerImage": "assets/common/carousel_image_1.png",
+    "title": "Flutter Beyond Mobile",
+    "description": "Strategies for taking your mobile codebase and deploying it smoothly to web and desktop platforms.",
+    "date": "WED, 25 FEB",
+    "timestamp": "2026-02-25T14:00:00Z",
+    "startTime": "2:00 PM",
+    "endTime": "4:00 PM",
+    "location": "New York"
+  },
+  {
+    "id": "17",
+    "bannerImage": "assets/common/About_Image_1.png",
+    "title": "Advanced Dart Types",
+    "description": "Mastering generics, type aliases, and the new records and patterns in Dart 3.",
+    "date": "FRI, 27 FEB",
+    "timestamp": "2026-02-27T10:00:00Z",
+    "startTime": "10:00 AM",
+    "endTime": "12:00 PM",
+    "location": "Remote"
+  },
+  {
+    "id": "18",
+    "bannerImage": "assets/common/About_Image_2.png",
+    "title": "Scaling State with Riverpod",
+    "description": "Best practices for modular architecture when relying exclusively on Riverpod for state management.",
+    "date": "TUE, 03 MAR",
+    "timestamp": "2026-03-03T11:00:00Z",
+    "startTime": "11:00 AM",
+    "endTime": "1:00 PM",
+    "location": "San Francisco"
+  },
+  {
+    "id": "19",
+    "bannerImage": "assets/common/carousel_image_1.png",
+    "title": "Serverless Functions with Firebase",
+    "description": "Write custom backend logic triggered by Flutter app events using Firebase Cloud Functions.",
+    "date": "THU, 05 MAR",
+    "timestamp": "2026-03-05T09:00:00Z",
+    "startTime": "9:00 AM",
+    "endTime": "11:30 AM",
+    "location": "London"
+  },
+  {
+    "id": "20",
+    "bannerImage": "assets/common/About_Image_1.png",
+    "title": "Material 3 Design Systems",
+    "description": "Implement complete, dynamic Material 3 design tokens into your Flutter application seamlessly.",
+    "date": "MON, 09 MAR",
+    "timestamp": "2026-03-09T15:00:00Z",
+    "startTime": "3:00 PM",
+    "endTime": "6:00 PM",
+    "location": "Berlin"
+  }
+]

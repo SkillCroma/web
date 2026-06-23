@@ -10,7 +10,7 @@ import 'package:skillcroma/values.dart';
 class SocialMedia extends StatelessWidget {
   const SocialMedia({super.key, required this.socialMedia, required this.icon});
 
-  final socialMediaTypes socialMedia;
+  final SocialMediaTypes socialMedia;
   final IconData icon;
 
   @override

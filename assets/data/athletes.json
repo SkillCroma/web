@@ -1,0 +1,98 @@
+[
+  {
+    "rank": 1,
+    "name": "Sanjay Priyan S",
+    "uid": "SC-2025-001",
+    "type": "Sprinter",
+    "credit": 1402,
+    "state": "Tamil Nadu"
+  },
+  {
+    "rank": 2,
+    "name": "Charan K",
+    "uid": "SC-2025-002",
+    "type": "Sprinter",
+    "credit": 1383,
+    "state": "Telangana"
+  },
+  {
+    "rank": 3,
+    "name": "Ananya H",
+    "uid": "SC-2025-003",
+    "type": "Sprinter",
+    "credit": 1358,
+    "state": "Andhra Pradesh"
+  },
+  {
+    "rank": 4,
+    "name": "Vishnu T",
+    "uid": "SC-2025-004",
+    "type": "Long Jump",
+    "credit": 1302,
+    "state": "Kerala"
+  },
+  {
+    "rank": 5,
+    "name": "Madhav M",
+    "uid": "SC-2025-005",
+    "type": "Long Jump",
+    "credit": 1291,
+    "state": "Kerala"
+  },
+  {
+    "rank": 6,
+    "name": "Manikandan G",
+    "uid": "SC-2025-006",
+    "type": "Sprinter",
+    "credit": 1285,
+    "state": "Tamil Nadu"
+  },
+  {
+    "rank": 7,
+    "name": "Aditya N",
+    "uid": "SC-2025-007",
+    "type": "High Jump",
+    "credit": 1275,
+    "state": "Andhra Pradesh"
+  },
+  {
+    "rank": 8,
+    "name": "Aishwarya S",
+    "uid": "SC-2025-008",
+    "type": "High Jump",
+    "credit": 1269,
+    "state": "Telangana"
+  },
+  {
+    "rank": 9,
+    "name": "Shyam P",
+    "uid": "SC-2025-009",
+    "type": "Sprinter",
+    "credit": 1234,
+    "state": "Tamil Nadu"
+  },
+  {
+    "rank": 10,
+    "name": "Pranav A",
+    "uid": "SC-2025-010",
+    "type": "Sprinter",
+    "credit": 1211,
+    "state": "Andhra Pradesh"
+  },
+  {
+    "rank": 11,
+    "name": "Divya R",
+    "uid": "SC-2025-011",
+    "type": "Long Jump",
+    "credit": 1198,
+    "state": "Karnataka"
+  },
+  {
+    "rank": 12,
+    "name": "Arjun V",
+    "uid": "SC-2025-012",
+    "type": "Sprinter",
+    "credit": 1185,
+    "state": "Karnataka"
+  }
+]
