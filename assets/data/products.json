@@ -1,0 +1,3641 @@
+{
+  "categories": [
+    {"id": 1, "name": "Athletes", "slug": "athletes"},
+    {"id": 2, "name": "Cricket", "slug": "cricket"},
+    {"id": 3, "name": "Basketball", "slug": "basketball"},
+    {"id": 4, "name": "Chess", "slug": "chess"},
+    {"id": 5, "name": "Esports (Freefire/BGMI)", "slug": "esports"},
+    {"id": 6, "name": "Throwball", "slug": "throwball"},
+    {"id": 7, "name": "Kho-Kho", "slug": "kho-kho"},
+    {"id": 8, "name": "Football", "slug": "football"},
+    {"id": 9, "name": "Singing", "slug": "singing"},
+    {"id": 10, "name": "Drawing", "slug": "drawing"},
+    {"id": 11,"name": "Volleyball","slug": "volleyball"},
+    {"id": 12,"name": "Skating","slug": "skating"},
+    {"id": 13, "name": "Karate", "slug": "karate"},
+    {"id": 14, "name": "Swimming", "slug": "swimming"}
+  ],
+  "brands": [
+    {"id": 1, "name": "Apex Pro", "slug": "apex-pro"},
+    {"id": 2, "name": "Titan Arena", "slug": "titan-arena"},
+    {"id": 3, "name": "AeroStream", "slug": "aerostream"},
+    {"id": 4, "name": "Vanguard Elite", "slug": "vanguard-elite"},
+    {"id": 5, "name": "MasterCraft Studio", "slug": "mastercraft-studio"}
+  ],
+  "attributes": [
+    {"id": 1, "name": "Color", "slug": "color"},
+    {"id": 2, "name": "Size / Variant", "slug": "size-variant"},
+    {"id": 3, "name": "Material", "slug": "material"},
+    {"id": 4, "name": "Skill Level", "slug": "skill-level"}
+  ],
+  "products": [
+    {
+      "id": 1001,
+      "category_id": 1,
+      "brand_id": 2,
+      "title": "Vanguard Pro Spikes",
+      "slug": "vanguard-pro-spikes-1001",
+      "description": "Professional lightweight running spikes engineered for maximum sprint acceleration.",
+      "price": 120.0,
+      "is_visible": true
+    },
+    {
+      "id": 1002,
+      "category_id": 1,
+      "brand_id": 3,
+      "title": "Apex Agility Hurdle Set",
+      "slug": "apex-agility-hurdle-set-1002",
+      "description": "Adjustable height training hurdles for speed and stride conditioning.",
+      "price": 45.85,
+      "is_visible": true
+    },
+    {
+      "id": 1003,
+      "category_id": 1,
+      "brand_id": 4,
+      "title": "Titan Pro Starting Blocks",
+      "slug": "titan-pro-starting-blocks-1003",
+      "description": "Heavy-duty steel track starting blocks with adjustable angle pedal settings.",
+      "price": 90.69,
+      "is_visible": true
+    },
+    {
+      "id": 1004,
+      "category_id": 1,
+      "brand_id": 5,
+      "title": "AeroStream Running Vest",
+      "slug": "aerostream-running-vest-1004",
+      "description": "Ultra-breathable hydration vest with integrated soft flask pockets.",
+      "price": 35.05,
+      "is_visible": true
+    },
+    {
+      "id": 1005,
+      "category_id": 1,
+      "brand_id": 1,
+      "title": "Vanguard Weighted Training Sled",
+      "slug": "vanguard-weighted-training-sled-1005",
+      "description": "Power acceleration pulling sled with adjustable harness straps.",
+      "price": 76.4,
+      "is_visible": true
+    },
+    {
+      "id": 1006,
+      "category_id": 1,
+      "brand_id": 2,
+      "title": "Apex Digital Lap Timer",
+      "slug": "apex-digital-lap-timer-1006",
+      "description": "High-precision stopwatch tracking up to 100 split laps simultaneously.",
+      "price": 26.74,
+      "is_visible": true
+    },
+    {
+      "id": 1007,
+      "category_id": 1,
+      "brand_id": 3,
+      "title": "Titan Elite Baton Set",
+      "slug": "titan-elite-baton-set-1007",
+      "description": "Official weight aluminum relay batons with anodized textured grip surfaces.",
+      "price": 17.1,
+      "is_visible": true
+    },
+    {
+      "id": 1008,
+      "category_id": 2,
+      "brand_id": 4,
+      "title": "Titan Grade 1 Willow Bat",
+      "slug": "titan-grade-1-willow-bat-1008",
+      "description": "Handcrafted premium English willow bat with large edges and extended sweet spot.",
+      "price": 252.45,
+      "is_visible": true
+    },
+    {
+      "id": 1009,
+      "category_id": 2,
+      "brand_id": 5,
+      "title": "Apex Match Leather Balls",
+      "slug": "apex-match-leather-balls-1009",
+      "description": "Alum-tanned four-piece leather balls built for optimal swing and durability.",
+      "price": 37.8,
+      "is_visible": true
+    },
+    {
+      "id": 1010,
+      "category_id": 2,
+      "brand_id": 1,
+      "title": "ProShield Air-Flow Helmet",
+      "slug": "proshield-air-flow-helmet-1010",
+      "description": "High-impact defensive helmet with an adjustable titanium face grille.",
+      "price": 68.15,
+      "is_visible": true
+    },
+    {
+      "id": 1011,
+      "category_id": 2,
+      "brand_id": 2,
+      "title": "AeroStream Flex Batting Pads",
+      "slug": "aerostream-flex-batting-pads-1011",
+      "description": "Molded dual-density foam leg guards ensuring lightweight impact shielding.",
+      "price": 51.5,
+      "is_visible": true
+    },
+    {
+      "id": 1012,
+      "category_id": 2,
+      "brand_id": 3,
+      "title": "Vanguard Elite Wicket Gloves",
+      "slug": "vanguard-elite-wicket-gloves-1012",
+      "description": "Premium aniline leather palms with rubber cupped grips for maximum catches.",
+      "price": 43.84,
+      "is_visible": true
+    },
+    {
+      "id": 1013,
+      "category_id": 2,
+      "brand_id": 4,
+      "title": "Titan Target Training Stumps",
+      "slug": "titan-target-training-stumps-1013",
+      "description": "Spring-loaded heavy base target stumps for dynamic bowling practices.",
+      "price": 59.2,
+      "is_visible": true
+    },
+    {
+      "id": 1014,
+      "category_id": 2,
+      "brand_id": 5,
+      "title": "Apex Wheelie Kit Bag",
+      "slug": "apex-wheelie-kit-bag-1014",
+      "description": "Heavy-duty 1680D polyester gear transport bag with dedicated bat compartments.",
+      "price": 84.54,
+      "is_visible": true
+    },
+    {
+      "id": 1015,
+      "category_id": 3,
+      "brand_id": 1,
+      "title": "Apex Gridiron Basketball",
+      "slug": "apex-gridiron-basketball-1015",
+      "description": "Official size indoor/outdoor composite leather ball with deep channel design.",
+      "price": 34.89,
+      "is_visible": true
+    },
+    {
+      "id": 1016,
+      "category_id": 3,
+      "brand_id": 2,
+      "title": "Titan Pro Breakaway Rim",
+      "slug": "titan-pro-breakaway-rim-1016",
+      "description": "Heavy-duty steel hoop rim with dual-spring breakaway mechanism.",
+      "price": 115.25,
+      "is_visible": true
+    },
+    {
+      "id": 1017,
+      "category_id": 3,
+      "brand_id": 3,
+      "title": "AeroStream High-Top Sneakers",
+      "slug": "aerostream-high-top-sneakers-1017",
+      "description": "Padded ankle support basketball shoes featuring a high-rebound responsive midsole.",
+      "price": 100.6,
+      "is_visible": true
+    },
+    {
+      "id": 1018,
+      "category_id": 3,
+      "brand_id": 4,
+      "title": "Vanguard Tactical Coaching Board",
+      "slug": "vanguard-tactical-coaching-board-1018",
+      "description": "Magnetic dry-erase basketball strategy board with miniature positional markers.",
+      "price": 24.45,
+      "is_visible": true
+    },
+    {
+      "id": 1019,
+      "category_id": 3,
+      "brand_id": 5,
+      "title": "ProShield Compression Sleeves",
+      "slug": "proshield-compression-sleeves-1019",
+      "description": "Moisture-wicking shooting sleeves providing targeted arm muscle support.",
+      "price": 19.29,
+      "is_visible": true
+    },
+    {
+      "id": 1020,
+      "category_id": 3,
+      "brand_id": 1,
+      "title": "Titan Heavy-Duty Basketball Net",
+      "slug": "titan-heavy-duty-basketball-net-1020",
+      "description": "All-weather anti-whip white nylon mesh net with reinforced loop attachment.",
+      "price": 16.15,
+      "is_visible": true
+    },
+    {
+      "id": 1021,
+      "category_id": 3,
+      "brand_id": 2,
+      "title": "Apex Return Ball Trainer",
+      "slug": "apex-return-ball-trainer-1021",
+      "description": "360-degree snap-on ball return chute targeting efficient solo shooting drills.",
+      "price": 45.0,
+      "is_visible": true
+    },
+    {
+      "id": 1022,
+      "category_id": 4,
+      "brand_id": 3,
+      "title": "MasterCraft Grandmaster Chess Set",
+      "slug": "mastercraft-grandmaster-chess-set-1022",
+      "description": "Weighted professional wooden chess pieces complete with a walnut storage case.",
+      "price": 147.35,
+      "is_visible": true
+    },
+    {
+      "id": 1023,
+      "category_id": 4,
+      "brand_id": 4,
+      "title": "AeroStream Digital FIDE Clock",
+      "slug": "aerostream-digital-fide-clock-1023",
+      "description": "Official tournament digital chess timer featuring delay and bonus increment modes.",
+      "price": 52.7,
+      "is_visible": true
+    },
+    {
+      "id": 1024,
+      "category_id": 4,
+      "brand_id": 5,
+      "title": "Titan Roll-Up Vinyl Board Set",
+      "slug": "titan-roll-up-vinyl-board-set-1024",
+      "description": "Tournament club pack containing a coordinates roll-up mat and canvas travel bag.",
+      "price": 28.04,
+      "is_visible": true
+    },
+    {
+      "id": 1025,
+      "category_id": 4,
+      "brand_id": 1,
+      "title": "MasterCraft Silicone Chess Set",
+      "slug": "mastercraft-silicone-chess-set-1025",
+      "description": "Unbreakable wash-safe silicone chess set optimized for outdoor recreational play.",
+      "price": 32.9,
+      "is_visible": true
+    },
+    {
+      "id": 1026,
+      "category_id": 4,
+      "brand_id": 2,
+      "title": "Vanguard Analytical Scorebooks",
+      "slug": "vanguard-analytical-scorebooks-1026",
+      "description": "Hardcover chess game recording logbook supporting notation for up to 100 matches.",
+      "price": 17.74,
+      "is_visible": true
+    },
+    {
+      "id": 1027,
+      "category_id": 4,
+      "brand_id": 3,
+      "title": "Apex Electronic Chess Computer",
+      "slug": "apex-electronic-chess-computer-1027",
+      "description": "Smart interactive chess board with automated AI levels and LED hint indicators.",
+      "price": 209.09,
+      "is_visible": true
+    },
+    {
+      "id": 1028,
+      "category_id": 4,
+      "brand_id": 4,
+      "title": "Titan Magnetic Pocket Game",
+      "slug": "titan-magnetic-pocket-game-1028",
+      "description": "Compact folding magnetic chess set perfect for long commutes and travel analysis.",
+      "price": 23.7,
+      "is_visible": true
+    },
+    {
+      "id": 1029,
+      "category_id": 5,
+      "brand_id": 5,
+      "title": "Titan Pro Mechanical Keyboard",
+      "slug": "titan-pro-mechanical-keyboard-1029",
+      "description": "Ultra-fast optical switches, per-key RGB backlighting, optimized for rapid action keys.",
+      "price": 94.8,
+      "is_visible": true
+    },
+    {
+      "id": 1030,
+      "category_id": 5,
+      "brand_id": 1,
+      "title": "AeroStream 7.1 Surround Headset",
+      "slug": "aerostream-7.1-surround-headset-1030",
+      "description": "Spatial audio gaming headset with noise-canceling detachable microphone.",
+      "price": 70.14,
+      "is_visible": true
+    },
+    {
+      "id": 1031,
+      "category_id": 5,
+      "brand_id": 2,
+      "title": "Vanguard High-DPI Wireless Mouse",
+      "slug": "vanguard-high-dpi-wireless-mouse-1031",
+      "description": "Lightweight 16,000 DPI gaming mouse with sub-millisecond wireless polling rates.",
+      "price": 75.0,
+      "is_visible": true
+    },
+    {
+      "id": 1032,
+      "category_id": 5,
+      "brand_id": 3,
+      "title": "Apex Extended Speed Mousepad",
+      "slug": "apex-extended-speed-mousepad-1032",
+      "description": "Massive low-friction textile gaming surface with durable anti-fray stitched borders.",
+      "price": 32.85,
+      "is_visible": true
+    },
+    {
+      "id": 1033,
+      "category_id": 5,
+      "brand_id": 4,
+      "title": "ProShield Carbon Fiber Finger Sleeves",
+      "slug": "proshield-carbon-fiber-finger-sleeves-1033",
+      "description": "Highly sensitive touch screen thumb sleeves preventing sweat lag during mobile gaming.",
+      "price": 18.19,
+      "is_visible": true
+    },
+    {
+      "id": 1034,
+      "category_id": 5,
+      "brand_id": 5,
+      "title": "Titan Ergonomic Gaming Chair",
+      "slug": "titan-ergonomic-gaming-chair-1034",
+      "description": "4D armrests with lumbar memory foam pillows supporting extended competitive streaming.",
+      "price": 200.55,
+      "is_visible": true
+    },
+    {
+      "id": 1035,
+      "category_id": 5,
+      "brand_id": 1,
+      "title": "AeroStream Mobile Cooling Fan",
+      "slug": "aerostream-mobile-cooling-fan-1035",
+      "description": "Snap-on dual peltier radiator cooler reducing thermal throttling on mobile devices.",
+      "price": 39.4,
+      "is_visible": true
+    },
+    {
+      "id": 1036,
+      "category_id": 6,
+      "brand_id": 2,
+      "title": "Apex Match Pro Throwball",
+      "slug": "apex-match-pro-throwball-1036",
+      "description": "Official size laced match throwball with structured leather panelling for seamless catching.",
+      "price": 44.75,
+      "is_visible": true
+    },
+    {
+      "id": 1037,
+      "category_id": 6,
+      "brand_id": 3,
+      "title": "Titan Court Boundary Line Ribbon",
+      "slug": "titan-court-boundary-line-ribbon-1037",
+      "description": "High-visibility heavy-duty ground marking tape set including robust steel anchor pins.",
+      "price": 36.6,
+      "is_visible": true
+    },
+    {
+      "id": 1038,
+      "category_id": 6,
+      "brand_id": 4,
+      "title": "Vanguard Reinforced Post Net",
+      "slug": "vanguard-reinforced-post-net-1038",
+      "description": "Heavy-duty outdoor throwball net complete with thick double-stitched canvas headers.",
+      "price": 54.95,
+      "is_visible": true
+    },
+    {
+      "id": 1039,
+      "category_id": 6,
+      "brand_id": 5,
+      "title": "ProShield Grip-Enhancing Gel",
+      "slug": "proshield-grip-enhancing-gel-1039",
+      "description": "Non-slip antibacterial athletic hand chalk gel ensuring clean handling and passing.",
+      "price": 25.29,
+      "is_visible": true
+    },
+    {
+      "id": 1040,
+      "category_id": 6,
+      "brand_id": 1,
+      "title": "AeroStream Training Bibs",
+      "slug": "aerostream-training-bibs-1040",
+      "description": "Breathable mesh lightweight sports scrimmage vests for internal team training sessions.",
+      "price": 29.64,
+      "is_visible": true
+    },
+    {
+      "id": 1041,
+      "category_id": 6,
+      "brand_id": 2,
+      "title": "Apex Precision Whistle Lanyard",
+      "slug": "apex-precision-whistle-lanyard-1041",
+      "description": "Pealess high-volume coach whistle attached safely to a soft comfortable neck rope.",
+      "price": 21.5,
+      "is_visible": true
+    },
+    {
+      "id": 1042,
+      "category_id": 6,
+      "brand_id": 3,
+      "title": "Titan Court Agility Marker Discs",
+      "slug": "titan-court-agility-marker-discs-1042",
+      "description": "Flexible low-profile saucer cone floor markers used for charting tactical defense maps.",
+      "price": 27.85,
+      "is_visible": true
+    },
+    {
+      "id": 1043,
+      "category_id": 7,
+      "brand_id": 4,
+      "title": "Titan Official Kho-Kho Wooden Poles",
+      "slug": "titan-official-kho-kho-wooden-poles-1043",
+      "description": "Official standard hardwood poles coated with weatherproof clear varnishing finishes.",
+      "price": 134.7,
+      "is_visible": true
+    },
+    {
+      "id": 1044,
+      "category_id": 7,
+      "brand_id": 5,
+      "title": "Vanguard Ground Anchor Sleeves",
+      "slug": "vanguard-ground-anchor-sleeves-1044",
+      "description": "Heavy steel socket sleeves embedded inside the ground to secure court posts safely.",
+      "price": 53.05,
+      "is_visible": true
+    },
+    {
+      "id": 1045,
+      "category_id": 7,
+      "brand_id": 1,
+      "title": "Apex High-Traction Mat Shoes",
+      "slug": "apex-high-traction-mat-shoes-1045",
+      "description": "Flexible flat-soled court shoes engineered specifically for quick pivoting maneuvers.",
+      "price": 67.4,
+      "is_visible": true
+    },
+    {
+      "id": 1046,
+      "category_id": 7,
+      "brand_id": 2,
+      "title": "ProShield Elastic Ankle Braces",
+      "slug": "proshield-elastic-ankle-braces-1046",
+      "description": "Anatomically woven elastic sleeve safeguarding joints against sudden lateral stress shifts.",
+      "price": 30.25,
+      "is_visible": true
+    },
+    {
+      "id": 1047,
+      "category_id": 7,
+      "brand_id": 3,
+      "title": "AeroStream Microfiber Sport Towel",
+      "slug": "aerostream-microfiber-sport-towel-1047",
+      "description": "Fast-drying, hyper-absorbent sweat towel complete with a ventilation carry capsule.",
+      "price": 26.09,
+      "is_visible": true
+    },
+    {
+      "id": 1048,
+      "category_id": 7,
+      "brand_id": 4,
+      "title": "Titan Team Captain Armbands",
+      "slug": "titan-team-captain-armbands-1048",
+      "description": "High-stretch elastic captain armbands outfitted with dependable hook-and-loop security features.",
+      "price": 21.95,
+      "is_visible": true
+    },
+    {
+      "id": 1049,
+      "category_id": 7,
+      "brand_id": 5,
+      "title": "Vanguard Field Measuring Tape",
+      "slug": "vanguard-field-measuring-tape-1049",
+      "description": "Heavy-duty fiberglass open-reel long tape designed for mapping precision court zones.",
+      "price": 38.79,
+      "is_visible": true
+    },
+    {
+      "id": 1050,
+      "category_id": 8,
+      "brand_id": 1,
+      "title": "Apex Match Pro Football",
+      "slug": "apex-match-pro-football-1050",
+      "description": "Thermo-bonded premium match ball boasting optimal aerodynamic stability curves.",
+      "price": 63.14,
+      "is_visible": true
+    },
+    {
+      "id": 1051,
+      "category_id": 8,
+      "brand_id": 2,
+      "title": "Titan Striker Football Boots",
+      "slug": "titan-striker-football-boots-1051",
+      "description": "Firm-ground acceleration cleats sporting a lightweight upper matrix layout.",
+      "price": 107.49,
+      "is_visible": true
+    },
+    {
+      "id": 1052,
+      "category_id": 8,
+      "brand_id": 3,
+      "title": "AeroStream Goalkeeper Gloves",
+      "slug": "aerostream-goalkeeper-gloves-1052",
+      "description": "4mm professional elite latex palms delivering absolute structural safety grips.",
+      "price": 52.35,
+      "is_visible": true
+    },
+    {
+      "id": 1053,
+      "category_id": 8,
+      "brand_id": 4,
+      "title": "ProShield Carbon Shin Guards",
+      "slug": "proshield-carbon-shin-guards-1053",
+      "description": "Anatomically molded impact shell fortified with high-density EVA foam backing shields.",
+      "price": 43.19,
+      "is_visible": true
+    },
+    {
+      "id": 1054,
+      "category_id": 8,
+      "brand_id": 5,
+      "title": "Vanguard Training Cones Set",
+      "slug": "vanguard-training-cones-set-1054",
+      "description": "High-visibility flexible training marker cones ideal for track speed drill grids.",
+      "price": 34.54,
+      "is_visible": true
+    },
+    {
+      "id": 1055,
+      "category_id": 8,
+      "brand_id": 1,
+      "title": "Apex Premium Full Goal Net",
+      "slug": "apex-premium-full-goal-net-1055",
+      "description": "All-weather braided weather-resistant goal post mesh nets matching tournament size scales.",
+      "price": 78.89,
+      "is_visible": true
+    },
+    {
+      "id": 1056,
+      "category_id": 8,
+      "brand_id": 2,
+      "title": "Titan Dual-Action Ball Pump",
+      "slug": "titan-dual-action-ball-pump-1056",
+      "description": "Compact manual air pump inflating efficiently on both push and pull tracking strokes.",
+      "price": 31.75,
+      "is_visible": true
+    },
+    {
+      "id": 1057,
+      "category_id": 9,
+      "brand_id": 3,
+      "title": "MasterCraft Studio Vocal Mic",
+      "slug": "mastercraft-studio-vocal-mic-1057",
+      "description": "Professional cardioid dynamic vocal microphone tailored for pristine live performance recording.",
+      "price": 118.6,
+      "is_visible": true
+    },
+    {
+      "id": 1058,
+      "category_id": 9,
+      "brand_id": 4,
+      "title": "AeroStream Studio Headphones",
+      "slug": "aerostream-studio-headphones-1058",
+      "description": "Closed-back reference monitoring headphones optimized for absolute vocal pitch accuracy tracking.",
+      "price": 99.45,
+      "is_visible": true
+    },
+    {
+      "id": 1059,
+      "category_id": 9,
+      "brand_id": 5,
+      "title": "Titan Dual-Layer Pop Filter",
+      "slug": "titan-dual-layer-pop-filter-1059",
+      "description": "Flexible gooseneck pop shield effectively filtering out disruptive vocal plosives.",
+      "price": 35.29,
+      "is_visible": true
+    },
+    {
+      "id": 1060,
+      "category_id": 9,
+      "brand_id": 1,
+      "title": "Vanguard Tripod Microphone Stand",
+      "slug": "vanguard-tripod-microphone-stand-1060",
+      "description": "Collapsible boom microphone stand complete with dual secure wire routing clips.",
+      "price": 48.65,
+      "is_visible": true
+    },
+    {
+      "id": 1061,
+      "category_id": 9,
+      "brand_id": 2,
+      "title": "MasterCraft Portable Vocal Booth",
+      "slug": "mastercraft-portable-vocal-booth-1061",
+      "description": "High-density acoustic foam isolation shield mounting easily behind recording mics.",
+      "price": 66.0,
+      "is_visible": true
+    },
+    {
+      "id": 1062,
+      "category_id": 9,
+      "brand_id": 3,
+      "title": "Apex Digital Pitch Trainer",
+      "slug": "apex-digital-pitch-trainer-1062",
+      "description": "Smart battery-powered vocal tuner monitor providing real-time visual frequency tracks.",
+      "price": 53.35,
+      "is_visible": true
+    },
+    {
+      "id": 1063,
+      "category_id": 9,
+      "brand_id": 4,
+      "title": "Titan Premium XLR Cable",
+      "slug": "titan-premium-xlr-cable-1063",
+      "description": "Oxygen-free copper core audio cable shielded with heavy-duty braided tweed skins.",
+      "price": 38.2,
+      "is_visible": true
+    },
+    {
+      "id": 1064,
+      "category_id": 10,
+      "brand_id": 5,
+      "title": "MasterCraft 72-Color Pencil Set",
+      "slug": "mastercraft-72-color-pencil-set-1064",
+      "description": "Premium soft-core coloring art pencils optimized for seamless blending and rich shading layouts.",
+      "price": 62.04,
+      "is_visible": true
+    },
+    {
+      "id": 1065,
+      "category_id": 10,
+      "brand_id": 1,
+      "title": "Apex Heavyweight Sketchbook",
+      "slug": "apex-heavyweight-sketchbook-1065",
+      "description": "Hardbound acid-free textured paper book suitable for multi-medium mixed sketches.",
+      "price": 40.9,
+      "is_visible": true
+    },
+    {
+      "id": 1066,
+      "category_id": 10,
+      "brand_id": 2,
+      "title": "Titan Professional Wood Easel",
+      "slug": "titan-professional-wood-easel-1066",
+      "description": "Adjustable studio H-frame canvas tripod stand handcrafted with robust oiled beechwood.",
+      "price": 86.75,
+      "is_visible": true
+    },
+    {
+      "id": 1067,
+      "category_id": 10,
+      "brand_id": 3,
+      "title": "Vanguard Fineliner Art Markers",
+      "slug": "vanguard-fineliner-art-markers-1067",
+      "description": "Archival pigment ink fine-point sketch pens delivering clean smudgeproof outlines.",
+      "price": 44.6,
+      "is_visible": true
+    },
+    {
+      "id": 1068,
+      "category_id": 10,
+      "brand_id": 4,
+      "title": "AeroStream Dual-Tip Alcohol Pens",
+      "slug": "aerostream-dual-tip-alcohol-pens-1068",
+      "description": "Vibrant permanent illustration sketch markers blending seamlessly across gradient charts.",
+      "price": 73.44,
+      "is_visible": true
+    },
+    {
+      "id": 1069,
+      "category_id": 10,
+      "brand_id": 5,
+      "title": "MasterCraft Blending Stumps Pack",
+      "slug": "mastercraft-blending-stumps-pack-1069",
+      "description": "Assorted sizes of tightly rolled paper tortillons tailored for blending charcoal details.",
+      "price": 30.3,
+      "is_visible": true
+    },
+    {
+      "id": 1070,
+      "category_id": 10,
+      "brand_id": 1,
+      "title": "Apex Precision Graphite Pencils",
+      "slug": "apex-precision-graphite-pencils-1070",
+      "description": "Curated sketching pencil set spanning hard to soft grading variants.",
+      "price": 36.15,
+      "is_visible": true
+    },
+    {
+      "id": 1071,
+      "category_id": 11,
+      "brand_id": 2,
+      "title": "AeroStream V-Gold Volleyball",
+      "slug": "aerostream-v-gold-volleyball-1071",
+      "description": "Premium composite micro-fiber cover with aerodynamic 18-panel stabilization matrices.",
+      "price": 64.49,
+      "is_visible": true
+    },
+    {
+      "id": 1072,
+      "category_id": 11,
+      "brand_id": 3,
+      "title": "Apex Tournament Boundary Net",
+      "slug": "apex-tournament-boundary-net-1072",
+      "description": "Heavy outdoor weather-tested mesh net bound cleanly by rigid internal steel cores.",
+      "price": 134.85,
+      "is_visible": true
+    },
+    {
+      "id": 1073,
+      "category_id": 11,
+      "brand_id": 4,
+      "title": "ProShield Contoured Knee Sleeves",
+      "slug": "proshield-contoured-knee-sleeves-1073",
+      "description": "Ergonomic compression padding shields absorbing hard floor impact dives perfectly.",
+      "price": 43.7,
+      "is_visible": true
+    },
+    {
+      "id": 1074,
+      "category_id": 11,
+      "brand_id": 5,
+      "title": "Vanguard Fiberglass Antennas",
+      "slug": "vanguard-fiberglass-antennas-1074",
+      "description": "Official red-and-white striped court boundary antennas using secure clamp bindings.",
+      "price": 70.55,
+      "is_visible": true
+    },
+    {
+      "id": 1075,
+      "category_id": 11,
+      "brand_id": 1,
+      "title": "Titan Heavy Ball Storage Basket",
+      "slug": "titan-heavy-ball-storage-basket-1075",
+      "description": "Collapsible steel framework basket trolley holding up to 30 fully inflated volleyballs.",
+      "price": 105.89,
+      "is_visible": true
+    },
+    {
+      "id": 1076,
+      "category_id": 11,
+      "brand_id": 2,
+      "title": "AeroStream Pealess Ref Whistle",
+      "slug": "aerostream-pealess-ref-whistle-1076",
+      "description": "High-frequency auditory warning blast whistle registering up to 115dB output levels.",
+      "price": 36.24,
+      "is_visible": true
+    },
+    {
+      "id": 1077,
+      "category_id": 11,
+      "brand_id": 3,
+      "title": "ProShield Non-Stretch Support Tape",
+      "slug": "proshield-non-stretch-support-tape-1077",
+      "description": "Rigid athletic adhesive cotton tape stabilizing finger joints securely during sets.",
+      "price": 38.6,
+      "is_visible": true
+    },
+    {
+      "id": 1078,
+      "category_id": 12,
+      "brand_id": 4,
+      "title": "Apex Elite Inline Speed Skates",
+      "slug": "apex-elite-inline-speed-skates-1078",
+      "description": "High-rebound poly wheels anchored to a structural CNC aluminum race chassis frame.",
+      "price": 171.95,
+      "is_visible": true
+    },
+    {
+      "id": 1079,
+      "category_id": 12,
+      "brand_id": 5,
+      "title": "Titan Classic Quad Roller Skates",
+      "slug": "titan-classic-quad-roller-skates-1079",
+      "description": "Retro synthetic leather high boots matching durable indoor/outdoor artistic layouts.",
+      "price": 95.3,
+      "is_visible": true
+    },
+    {
+      "id": 1080,
+      "category_id": 12,
+      "brand_id": 1,
+      "title": "ProShield Multi-Sport Helmet",
+      "slug": "proshield-multi-sport-helmet-1080",
+      "description": "Dual-certified high impact protective shell integrated with 14 cool ventilation ducts.",
+      "price": 60.64,
+      "is_visible": true
+    },
+    {
+      "id": 1081,
+      "category_id": 12,
+      "brand_id": 2,
+      "title": "ProShield Tri-Pack Guard Set",
+      "slug": "proshield-tri-pack-guard-set-1081",
+      "description": "Comprehensive safety shielding kit containing premium wrist, elbow, and knee pads.",
+      "price": 52.5,
+      "is_visible": true
+    },
+    {
+      "id": 1082,
+      "category_id": 12,
+      "brand_id": 3,
+      "title": "AeroStream Swiss Bearing Kit",
+      "slug": "aerostream-swiss-bearing-kit-1082",
+      "description": "Ultra-low friction chrome steel precision bearings pre-lubricated with speed oils.",
+      "price": 46.35,
+      "is_visible": true
+    },
+    {
+      "id": 1083,
+      "category_id": 12,
+      "brand_id": 4,
+      "title": "Vanguard Polyurethane Skate Wheels",
+      "slug": "vanguard-polyurethane-skate-wheels-1083",
+      "description": "Grippy street-shredding wheels engineered for concrete trick tracks.",
+      "price": 54.7,
+      "is_visible": true
+    },
+    {
+      "id": 1084,
+      "category_id": 12,
+      "brand_id": 5,
+      "title": "Apex T-Tool Multi Wrench",
+      "slug": "apex-t-tool-multi-wrench-1084",
+      "description": "Universal multi-functional skater setup tool featuring integrated hex key drivers.",
+      "price": 37.55,
+      "is_visible": true
+    },
+    {
+      "id": 1085,
+      "category_id": 13,
+      "brand_id": 1,
+      "title": "Vanguard Premium Karate Gi",
+      "slug": "vanguard-premium-karate-gi-1085",
+      "description": "Traditional heavy-structured uniform jacket and trousers tailored with reinforced double-stitching.",
+      "price": 74.4,
+      "is_visible": true
+    },
+    {
+      "id": 1086,
+      "category_id": 13,
+      "brand_id": 2,
+      "title": "Titan Tournament Sparring Gloves",
+      "slug": "titan-tournament-sparring-gloves-1086",
+      "description": "Molded foam core hand shields contoured cleanly to ensure realistic fist tracking alignment.",
+      "price": 49.74,
+      "is_visible": true
+    },
+    {
+      "id": 1087,
+      "category_id": 13,
+      "brand_id": 3,
+      "title": "ProShield Shin-Instep Guards",
+      "slug": "proshield-shin-instep-guards-1087",
+      "description": "Detachable full-length leg shields guarding shins and feet during impact conditioning.",
+      "price": 57.6,
+      "is_visible": true
+    },
+    {
+      "id": 1088,
+      "category_id": 13,
+      "brand_id": 4,
+      "title": "Apex Heavy Martial Arts Belt",
+      "slug": "apex-heavy-martial-arts-belt-1088",
+      "description": "Multi-layered premium cotton ranking belt stitched heavily to ensure maximum rigidity.",
+      "price": 40.44,
+      "is_visible": true
+    },
+    {
+      "id": 1089,
+      "category_id": 13,
+      "brand_id": 5,
+      "title": "Titan Target Kick Shield",
+      "slug": "titan-target-kick-shield-1089",
+      "description": "Thick multi-handled strike pad built to handle continuous heavy impact sparring power drills.",
+      "price": 64.8,
+      "is_visible": true
+    },
+    {
+      "id": 1090,
+      "category_id": 13,
+      "brand_id": 1,
+      "title": "ProShield Semi-Flexible Mouthguard",
+      "slug": "proshield-semi-flexible-mouthguard-1090",
+      "description": "Boil-and-bite custom fit protective dental armor featuring integrated airflow breathing tracks.",
+      "price": 39.65,
+      "is_visible": true
+    },
+    {
+      "id": 1091,
+      "category_id": 13,
+      "brand_id": 2,
+      "title": "Vanguard Rebreakable Break Boards",
+      "slug": "vanguard-rebreakable-break-boards-1091",
+      "description": "Dynamic plastic breaking training blocks configured with varying clip resistance tiers.",
+      "price": 54.0,
+      "is_visible": true
+    },
+    {
+      "id": 1092,
+      "category_id": 14,
+      "brand_id": 3,
+      "title": "AeroStream Hydro-Sleek Goggles",
+      "slug": "aerostream-hydro-sleek-goggles-1092",
+      "description": "Anti-fog wide-view mirrored racing goggles equipped with interchangeable nose bridges.",
+      "price": 56.84,
+      "is_visible": true
+    },
+    {
+      "id": 1093,
+      "category_id": 14,
+      "brand_id": 4,
+      "title": "Apex Premium Silicone Cap",
+      "slug": "apex-premium-silicone-cap-1093",
+      "description": "Wrinkle-free hydrodynamic profile swimming cap minimizing water resistance drags safely.",
+      "price": 40.7,
+      "is_visible": true
+    },
+    {
+      "id": 1094,
+      "category_id": 14,
+      "brand_id": 5,
+      "title": "Titan Ergonomic Kickboard",
+      "slug": "titan-ergonomic-kickboard-1094",
+      "description": "Dual grip-hole training board constructed with buoyant non-absorbent foam panels.",
+      "price": 48.54,
+      "is_visible": true
+    },
+    {
+      "id": 1095,
+      "category_id": 14,
+      "brand_id": 1,
+      "title": "Vanguard Fitness Swim Fins",
+      "slug": "vanguard-fitness-swim-fins-1095",
+      "description": "Short-blade split training fins tailored to maximize lower body endurance power loops.",
+      "price": 67.9,
+      "is_visible": true
+    },
+    {
+      "id": 1096,
+      "category_id": 14,
+      "brand_id": 2,
+      "title": "ProShield Mesh Equipment Tote",
+      "slug": "proshield-mesh-equipment-tote-1096",
+      "description": "Quick-drain breathable mesh gear carrier bag maximizing asset air drying speeds.",
+      "price": 44.75,
+      "is_visible": true
+    },
+    {
+      "id": 1097,
+      "category_id": 14,
+      "brand_id": 3,
+      "title": "AeroStream Silicone Ear Plugs Set",
+      "slug": "aerostream-silicone-ear-plugs-set-1097",
+      "description": "Ergonomically molded triple-flange water block ear plugs with custom storage pods.",
+      "price": 40.59,
+      "is_visible": true
+    },
+    {
+      "id": 1098,
+      "category_id": 14,
+      "brand_id": 4,
+      "title": "Titan Hydro-Resistance Hand Paddles",
+      "slug": "titan-hydro-resistance-hand-paddles-1098",
+      "description": "Contoured speed swim paddles complete with adjustable custom tubular strap tracks.",
+      "price": 48.2,
+      "is_visible": true
+    },
+    {
+      "id": 1099,
+      "category_id": 1,
+      "brand_id": 5,
+      "title": "Vanguard Pro Spikes Ultra Edition",
+      "slug": "vanguard-pro-spikes-ultra-edition-1099",
+      "description": "Professional lightweight running spikes engineered for maximum sprint acceleration.",
+      "price": 154.3,
+      "is_visible": true
+    },
+    {
+      "id": 1100,
+      "category_id": 1,
+      "brand_id": 1,
+      "title": "Apex Agility Hurdle Set Ultra Edition",
+      "slug": "apex-agility-hurdle-set-ultra-edition-1100",
+      "description": "Adjustable height training hurdles for speed and stride conditioning.",
+      "price": 80.15,
+      "is_visible": true
+    }
+  ],
+  "product_media": [
+    {
+      "id": 5001,
+      "product_id": 1001,
+      "file_path": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5002,
+      "product_id": 1002,
+      "file_path": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5003,
+      "product_id": 1003,
+      "file_path": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5004,
+      "product_id": 1004,
+      "file_path": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5005,
+      "product_id": 1005,
+      "file_path": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5006,
+      "product_id": 1006,
+      "file_path": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5007,
+      "product_id": 1007,
+      "file_path": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5008,
+      "product_id": 1008,
+      "file_path": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5009,
+      "product_id": 1009,
+      "file_path": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5010,
+      "product_id": 1010,
+      "file_path": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5011,
+      "product_id": 1011,
+      "file_path": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5012,
+      "product_id": 1012,
+      "file_path": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5013,
+      "product_id": 1013,
+      "file_path": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5014,
+      "product_id": 1014,
+      "file_path": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5015,
+      "product_id": 1015,
+      "file_path": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5016,
+      "product_id": 1016,
+      "file_path": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5017,
+      "product_id": 1017,
+      "file_path": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5018,
+      "product_id": 1018,
+      "file_path": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5019,
+      "product_id": 1019,
+      "file_path": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5020,
+      "product_id": 1020,
+      "file_path": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5021,
+      "product_id": 1021,
+      "file_path": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5022,
+      "product_id": 1022,
+      "file_path": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5023,
+      "product_id": 1023,
+      "file_path": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5024,
+      "product_id": 1024,
+      "file_path": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5025,
+      "product_id": 1025,
+      "file_path": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5026,
+      "product_id": 1026,
+      "file_path": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5027,
+      "product_id": 1027,
+      "file_path": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5028,
+      "product_id": 1028,
+      "file_path": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5029,
+      "product_id": 1029,
+      "file_path": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5030,
+      "product_id": 1030,
+      "file_path": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5031,
+      "product_id": 1031,
+      "file_path": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5032,
+      "product_id": 1032,
+      "file_path": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5033,
+      "product_id": 1033,
+      "file_path": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5034,
+      "product_id": 1034,
+      "file_path": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5035,
+      "product_id": 1035,
+      "file_path": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5036,
+      "product_id": 1036,
+      "file_path": "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5037,
+      "product_id": 1037,
+      "file_path": "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5038,
+      "product_id": 1038,
+      "file_path": "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5039,
+      "product_id": 1039,
+      "file_path": "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5040,
+      "product_id": 1040,
+      "file_path": "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5041,
+      "product_id": 1041,
+      "file_path": "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5042,
+      "product_id": 1042,
+      "file_path": "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5043,
+      "product_id": 1043,
+      "file_path": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5044,
+      "product_id": 1044,
+      "file_path": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5045,
+      "product_id": 1045,
+      "file_path": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5046,
+      "product_id": 1046,
+      "file_path": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5047,
+      "product_id": 1047,
+      "file_path": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5048,
+      "product_id": 1048,
+      "file_path": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5049,
+      "product_id": 1049,
+      "file_path": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5050,
+      "product_id": 1050,
+      "file_path": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5051,
+      "product_id": 1051,
+      "file_path": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5052,
+      "product_id": 1052,
+      "file_path": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5053,
+      "product_id": 1053,
+      "file_path": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5054,
+      "product_id": 1054,
+      "file_path": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5055,
+      "product_id": 1055,
+      "file_path": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5056,
+      "product_id": 1056,
+      "file_path": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5057,
+      "product_id": 1057,
+      "file_path": "https://images.unsplash.com/photo-1516280440614-37939bbacd6a?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5058,
+      "product_id": 1058,
+      "file_path": "https://images.unsplash.com/photo-1516280440614-37939bbacd6a?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5059,
+      "product_id": 1059,
+      "file_path": "https://images.unsplash.com/photo-1516280440614-37939bbacd6a?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5060,
+      "product_id": 1060,
+      "file_path": "https://images.unsplash.com/photo-1516280440614-37939bbacd6a?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5061,
+      "product_id": 1061,
+      "file_path": "https://images.unsplash.com/photo-1516280440614-37939bbacd6a?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5062,
+      "product_id": 1062,
+      "file_path": "https://images.unsplash.com/photo-1516280440614-37939bbacd6a?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5063,
+      "product_id": 1063,
+      "file_path": "https://images.unsplash.com/photo-1516280440614-37939bbacd6a?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5064,
+      "product_id": 1064,
+      "file_path": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5065,
+      "product_id": 1065,
+      "file_path": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5066,
+      "product_id": 1066,
+      "file_path": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5067,
+      "product_id": 1067,
+      "file_path": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5068,
+      "product_id": 1068,
+      "file_path": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5069,
+      "product_id": 1069,
+      "file_path": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5070,
+      "product_id": 1070,
+      "file_path": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5071,
+      "product_id": 1071,
+      "file_path": "https://images.unsplash.com/photo-1592656094267-764a450201c5?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5072,
+      "product_id": 1072,
+      "file_path": "https://images.unsplash.com/photo-1592656094267-764a450201c5?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5073,
+      "product_id": 1073,
+      "file_path": "https://images.unsplash.com/photo-1592656094267-764a450201c5?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5074,
+      "product_id": 1074,
+      "file_path": "https://images.unsplash.com/photo-1592656094267-764a450201c5?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5075,
+      "product_id": 1075,
+      "file_path": "https://images.unsplash.com/photo-1592656094267-764a450201c5?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5076,
+      "product_id": 1076,
+      "file_path": "https://images.unsplash.com/photo-1592656094267-764a450201c5?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5077,
+      "product_id": 1077,
+      "file_path": "https://images.unsplash.com/photo-1592656094267-764a450201c5?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5078,
+      "product_id": 1078,
+      "file_path": "https://images.unsplash.com/photo-1564982024255-a17b8f1d3c52?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5079,
+      "product_id": 1079,
+      "file_path": "https://images.unsplash.com/photo-1564982024255-a17b8f1d3c52?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5080,
+      "product_id": 1080,
+      "file_path": "https://images.unsplash.com/photo-1564982024255-a17b8f1d3c52?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5081,
+      "product_id": 1081,
+      "file_path": "https://images.unsplash.com/photo-1564982024255-a17b8f1d3c52?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5082,
+      "product_id": 1082,
+      "file_path": "https://images.unsplash.com/photo-1564982024255-a17b8f1d3c52?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5083,
+      "product_id": 1083,
+      "file_path": "https://images.unsplash.com/photo-1564982024255-a17b8f1d3c52?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5084,
+      "product_id": 1084,
+      "file_path": "https://images.unsplash.com/photo-1564982024255-a17b8f1d3c52?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5085,
+      "product_id": 1085,
+      "file_path": "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5086,
+      "product_id": 1086,
+      "file_path": "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5087,
+      "product_id": 1087,
+      "file_path": "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5088,
+      "product_id": 1088,
+      "file_path": "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5089,
+      "product_id": 1089,
+      "file_path": "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5090,
+      "product_id": 1090,
+      "file_path": "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5091,
+      "product_id": 1091,
+      "file_path": "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5092,
+      "product_id": 1092,
+      "file_path": "https://images.unsplash.com/photo-1519666336592-e225a99dbe2f?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5093,
+      "product_id": 1093,
+      "file_path": "https://images.unsplash.com/photo-1519666336592-e225a99dbe2f?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5094,
+      "product_id": 1094,
+      "file_path": "https://images.unsplash.com/photo-1519666336592-e225a99dbe2f?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5095,
+      "product_id": 1095,
+      "file_path": "https://images.unsplash.com/photo-1519666336592-e225a99dbe2f?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5096,
+      "product_id": 1096,
+      "file_path": "https://images.unsplash.com/photo-1519666336592-e225a99dbe2f?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5097,
+      "product_id": 1097,
+      "file_path": "https://images.unsplash.com/photo-1519666336592-e225a99dbe2f?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5098,
+      "product_id": 1098,
+      "file_path": "https://images.unsplash.com/photo-1519666336592-e225a99dbe2f?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5099,
+      "product_id": 1099,
+      "file_path": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5100,
+      "product_id": 1100,
+      "file_path": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&q=80",
+      "is_primary": true,
+      "sort_order": 0
+    }
+  ],
+  "product_attribute_values": [
+    {"product_id": 1001,"attribute_id": 1,"value": "Neon Green"},
+    {"product_id": 1001,"attribute_id": 2,"value": "9 US"},
+    {"product_id": 1001,"attribute_id": 3,"value": "Synthetic Mesh"},
+    {"product_id": 1001,"attribute_id": 4,"value": "Advanced"},
+    {"product_id": 1002,"attribute_id": 1,"value": "Safety Orange"},
+    {"product_id": 1002,"attribute_id": 2,"value": "6-Pack"},
+    {"product_id": 1002,"attribute_id": 3,"value": "PVC"},
+    {"product_id": 1002,"attribute_id": 4,"value": "Intermediate"},
+    {"product_id": 1003,"attribute_id": 1,"value": "Chrome Silver"},
+    {"product_id": 1003,"attribute_id": 2,"value": "Standard"},
+    {"product_id": 1003,"attribute_id": 3,"value": "Steel/Rubber"},
+    {"product_id": 1003,"attribute_id": 4,"value": "Professional"},
+    {"product_id": 1004,"attribute_id": 1,"value": "Stealth Black"},
+    {"product_id": 1004,"attribute_id": 2,"value": "Medium"},
+    {"product_id": 1004,"attribute_id": 3,"value": "Nylon Mesh"},
+    {"product_id": 1004,"attribute_id": 4,"value": "Beginner"},
+    {"product_id": 1005,"attribute_id": 1,"value": "Matte Black"},
+    {"product_id": 1005,"attribute_id": 2,"value": "Heavy"},
+    {"product_id": 1005,"attribute_id": 3,"value": "Reinforced Iron"},
+    {"product_id": 1005,"attribute_id": 4,"value": "Advanced"},
+    {"product_id": 1006,"attribute_id": 1,"value": "Dark Grey"},
+    {"product_id": 1006,"attribute_id": 2,"value": "Pocket Size"},
+    {"product_id": 1006,"attribute_id": 3,"value": "ABS Plastic"},
+    {"product_id": 1006,"attribute_id": 4,"value": "Intermediate"},
+    {
+      "product_id": 1007,
+      "attribute_id": 1,
+      "value": "Multi-color"
+    },
+    {
+      "product_id": 1007,
+      "attribute_id": 2,
+      "value": "Pack of 4"
+    },
+    {
+      "product_id": 1007,
+      "attribute_id": 3,
+      "value": "Aluminium"
+    },
+    {
+      "product_id": 1007,
+      "attribute_id": 4,
+      "value": "Professional"
+    },
+    {
+      "product_id": 1008,
+      "attribute_id": 1,
+      "value": "Natural Wood"
+    },
+    {
+      "product_id": 1008,
+      "attribute_id": 2,
+      "value": "Short Handle"
+    },
+    {
+      "product_id": 1008,
+      "attribute_id": 3,
+      "value": "English Willow"
+    },
+    {
+      "product_id": 1008,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1009,
+      "attribute_id": 1,
+      "value": "Cherry Red"
+    },
+    {
+      "product_id": 1009,
+      "attribute_id": 2,
+      "value": "Pack of 2"
+    },
+    {
+      "product_id": 1009,
+      "attribute_id": 3,
+      "value": "Premium Leather"
+    },
+    {
+      "product_id": 1009,
+      "attribute_id": 4,
+      "value": "Professional"
+    },
+    {
+      "product_id": 1010,
+      "attribute_id": 1,
+      "value": "Navy Blue"
+    },
+    {
+      "product_id": 1010,
+      "attribute_id": 2,
+      "value": "Large"
+    },
+    {
+      "product_id": 1010,
+      "attribute_id": 3,
+      "value": "ABS Shell / Titanium"
+    },
+    {
+      "product_id": 1010,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1011,
+      "attribute_id": 1,
+      "value": "Classic White"
+    },
+    {
+      "product_id": 1011,
+      "attribute_id": 2,
+      "value": "Adult Regular"
+    },
+    {
+      "product_id": 1011,
+      "attribute_id": 3,
+      "value": "PU / Cane"
+    },
+    {
+      "product_id": 1011,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1012,
+      "attribute_id": 1,
+      "value": "Gold/White"
+    },
+    {
+      "product_id": 1012,
+      "attribute_id": 2,
+      "value": "Standard Adult"
+    },
+    {
+      "product_id": 1012,
+      "attribute_id": 3,
+      "value": "Premium Leather"
+    },
+    {
+      "product_id": 1012,
+      "attribute_id": 4,
+      "value": "Professional"
+    },
+    {
+      "product_id": 1013,
+      "attribute_id": 1,
+      "value": "Neon Yellow"
+    },
+    {
+      "product_id": 1013,
+      "attribute_id": 2,
+      "value": "28-inch"
+    },
+    {
+      "product_id": 1013,
+      "attribute_id": 3,
+      "value": "Ash Wood"
+    },
+    {
+      "product_id": 1013,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1014,
+      "attribute_id": 1,
+      "value": "Black/Orange"
+    },
+    {
+      "product_id": 1014,
+      "attribute_id": 2,
+      "value": "120L Capacity"
+    },
+    {
+      "product_id": 1014,
+      "attribute_id": 3,
+      "value": "Cordura Polyester"
+    },
+    {
+      "product_id": 1014,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1015,
+      "attribute_id": 1,
+      "value": "Classic Orange"
+    },
+    {
+      "product_id": 1015,
+      "attribute_id": 2,
+      "value": "Size 7"
+    },
+    {
+      "product_id": 1015,
+      "attribute_id": 3,
+      "value": "Composite Leather"
+    },
+    {
+      "product_id": 1015,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1016,
+      "attribute_id": 1,
+      "value": "Powder Red"
+    },
+    {
+      "product_id": 1016,
+      "attribute_id": 2,
+      "value": "18-inch Diameter"
+    },
+    {
+      "product_id": 1016,
+      "attribute_id": 3,
+      "value": "Alloy Steel"
+    },
+    {
+      "product_id": 1016,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1017,
+      "attribute_id": 1,
+      "value": "White/Blue"
+    },
+    {
+      "product_id": 1017,
+      "attribute_id": 2,
+      "value": "10 US"
+    },
+    {
+      "product_id": 1017,
+      "attribute_id": 3,
+      "value": "Knit Upper / Rubber"
+    },
+    {
+      "product_id": 1017,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1018,
+      "attribute_id": 1,
+      "value": "Whiteboard Grid"
+    },
+    {
+      "product_id": 1018,
+      "attribute_id": 2,
+      "value": "Medium A4"
+    },
+    {
+      "product_id": 1018,
+      "attribute_id": 3,
+      "value": "PVC Frame"
+    },
+    {
+      "product_id": 1018,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1019,
+      "attribute_id": 1,
+      "value": "All Black"
+    },
+    {
+      "product_id": 1019,
+      "attribute_id": 2,
+      "value": "One Size"
+    },
+    {
+      "product_id": 1019,
+      "attribute_id": 3,
+      "value": "Spandex Blend"
+    },
+    {
+      "product_id": 1019,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1020,
+      "attribute_id": 1,
+      "value": "Pure White"
+    },
+    {
+      "product_id": 1020,
+      "attribute_id": 2,
+      "value": "Standard 12-Loop"
+    },
+    {
+      "product_id": 1020,
+      "attribute_id": 3,
+      "value": "Braided Nylon"
+    },
+    {
+      "product_id": 1020,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1021,
+      "attribute_id": 1,
+      "value": "Yellow Accent"
+    },
+    {
+      "product_id": 1021,
+      "attribute_id": 2,
+      "value": "Universal Fit"
+    },
+    {
+      "product_id": 1021,
+      "attribute_id": 3,
+      "value": "Molded Plastic"
+    },
+    {
+      "product_id": 1021,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1022,
+      "attribute_id": 1,
+      "value": "Walnut/Maple"
+    },
+    {
+      "product_id": 1022,
+      "attribute_id": 2,
+      "value": "3.75\" King"
+    },
+    {
+      "product_id": 1022,
+      "attribute_id": 3,
+      "value": "Solid Hardwood"
+    },
+    {
+      "product_id": 1022,
+      "attribute_id": 4,
+      "value": "Professional"
+    },
+    {
+      "product_id": 1023,
+      "attribute_id": 1,
+      "value": "Matte Black"
+    },
+    {
+      "product_id": 1023,
+      "attribute_id": 2,
+      "value": "FIDE Standard"
+    },
+    {
+      "product_id": 1023,
+      "attribute_id": 3,
+      "value": "ABS Plastic"
+    },
+    {
+      "product_id": 1023,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1024,
+      "attribute_id": 1,
+      "value": "Forest Green"
+    },
+    {
+      "product_id": 1024,
+      "attribute_id": 2,
+      "value": "20x20 inches"
+    },
+    {
+      "product_id": 1024,
+      "attribute_id": 3,
+      "value": "Flexible Vinyl"
+    },
+    {
+      "product_id": 1024,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1025,
+      "attribute_id": 1,
+      "value": "Blue/White"
+    },
+    {
+      "product_id": 1025,
+      "attribute_id": 2,
+      "value": "Standard"
+    },
+    {
+      "product_id": 1025,
+      "attribute_id": 3,
+      "value": "Food-grade Silicone"
+    },
+    {
+      "product_id": 1025,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1026,
+      "attribute_id": 1,
+      "value": "Navy Hardcover"
+    },
+    {
+      "product_id": 1026,
+      "attribute_id": 2,
+      "value": "Pocket Size"
+    },
+    {
+      "product_id": 1026,
+      "attribute_id": 3,
+      "value": "Premium Paper"
+    },
+    {
+      "product_id": 1026,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1027,
+      "attribute_id": 1,
+      "value": "Mahogany Finish"
+    },
+    {
+      "product_id": 1027,
+      "attribute_id": 2,
+      "value": "Electronic Board"
+    },
+    {
+      "product_id": 1027,
+      "attribute_id": 3,
+      "value": "Wood/Sensors"
+    },
+    {
+      "product_id": 1027,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1028,
+      "attribute_id": 1,
+      "value": "Silver/Black"
+    },
+    {
+      "product_id": 1028,
+      "attribute_id": 2,
+      "value": "7-inch Travel"
+    },
+    {
+      "product_id": 1028,
+      "attribute_id": 3,
+      "value": "Molded Polymer"
+    },
+    {
+      "product_id": 1028,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1029,
+      "attribute_id": 1,
+      "value": "RGB Carbon"
+    },
+    {
+      "product_id": 1029,
+      "attribute_id": 2,
+      "value": "Tenkeyless"
+    },
+    {
+      "product_id": 1029,
+      "attribute_id": 3,
+      "value": "Aluminum Frame"
+    },
+    {
+      "product_id": 1029,
+      "attribute_id": 4,
+      "value": "Professional"
+    },
+    {
+      "product_id": 1030,
+      "attribute_id": 1,
+      "value": "Matte Black"
+    },
+    {
+      "product_id": 1030,
+      "attribute_id": 2,
+      "value": "Wired USB"
+    },
+    {
+      "product_id": 1030,
+      "attribute_id": 3,
+      "value": "Memory Foam/Plastic"
+    },
+    {
+      "product_id": 1030,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1031,
+      "attribute_id": 1,
+      "value": "Arctic White"
+    },
+    {
+      "product_id": 1031,
+      "attribute_id": 2,
+      "value": "Ergonomic Right"
+    },
+    {
+      "product_id": 1031,
+      "attribute_id": 3,
+      "value": "Ultra-lightweight Shell"
+    },
+    {
+      "product_id": 1031,
+      "attribute_id": 4,
+      "value": "Professional"
+    },
+    {
+      "product_id": 1032,
+      "attribute_id": 1,
+      "value": "Esports Cyber Edition"
+    },
+    {
+      "product_id": 1032,
+      "attribute_id": 2,
+      "value": "900x400mm"
+    },
+    {
+      "product_id": 1032,
+      "attribute_id": 3,
+      "value": "Stitched Rubber Base"
+    },
+    {
+      "product_id": 1032,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1033,
+      "attribute_id": 1,
+      "value": "Grey/Blue Accents"
+    },
+    {
+      "product_id": 1033,
+      "attribute_id": 2,
+      "value": "6-Pack"
+    },
+    {
+      "product_id": 1033,
+      "attribute_id": 3,
+      "value": "Carbon Fiber / Nylon"
+    },
+    {
+      "product_id": 1033,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1034,
+      "attribute_id": 1,
+      "value": "Neon Crimson"
+    },
+    {
+      "product_id": 1034,
+      "attribute_id": 2,
+      "value": "Adjustable Recline"
+    },
+    {
+      "product_id": 1034,
+      "attribute_id": 3,
+      "value": "Premium PU Leather"
+    },
+    {
+      "product_id": 1034,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1035,
+      "attribute_id": 1,
+      "value": "RGB Stealth"
+    },
+    {
+      "product_id": 1035,
+      "attribute_id": 2,
+      "value": "Universal Clip"
+    },
+    {
+      "product_id": 1035,
+      "attribute_id": 3,
+      "value": "Polycarbonate/Copper"
+    },
+    {
+      "product_id": 1035,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1036,
+      "attribute_id": 1,
+      "value": "Yellow/Blue Striped"
+    },
+    {
+      "product_id": 1036,
+      "attribute_id": 2,
+      "value": "Official Size"
+    },
+    {
+      "product_id": 1036,
+      "attribute_id": 3,
+      "value": "Genuine Leather"
+    },
+    {
+      "product_id": 1036,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1037,
+      "attribute_id": 1,
+      "value": "Bright Red"
+    },
+    {
+      "product_id": 1037,
+      "attribute_id": 2,
+      "value": "Full Court Set"
+    },
+    {
+      "product_id": 1037,
+      "attribute_id": 3,
+      "value": "Woven Nylon"
+    },
+    {
+      "product_id": 1037,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1038,
+      "attribute_id": 1,
+      "value": "Pitch Black Mesh"
+    },
+    {
+      "product_id": 1038,
+      "attribute_id": 2,
+      "value": "32 ft"
+    },
+    {
+      "product_id": 1038,
+      "attribute_id": 3,
+      "value": "Polyethylene"
+    },
+    {
+      "product_id": 1038,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1039,
+      "attribute_id": 1,
+      "value": "Clear Liquid"
+    },
+    {
+      "product_id": 1039,
+      "attribute_id": 2,
+      "value": "200ml Bottle"
+    },
+    {
+      "product_id": 1039,
+      "attribute_id": 3,
+      "value": "Liquid Magnesium Oxide"
+    },
+    {
+      "product_id": 1039,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1040,
+      "attribute_id": 1,
+      "value": "Neon Pink Set"
+    },
+    {
+      "product_id": 1040,
+      "attribute_id": 2,
+      "value": "10-Pack"
+    },
+    {
+      "product_id": 1040,
+      "attribute_id": 3,
+      "value": "Polyester Mesh"
+    },
+    {
+      "product_id": 1040,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1041,
+      "attribute_id": 1,
+      "value": "Safety Yellow"
+    },
+    {
+      "product_id": 1041,
+      "attribute_id": 2,
+      "value": "Standard"
+    },
+    {
+      "product_id": 1041,
+      "attribute_id": 3,
+      "value": "ABS Plastic"
+    },
+    {
+      "product_id": 1041,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1042,
+      "attribute_id": 1,
+      "value": "Multi-color Mix"
+    },
+    {
+      "product_id": 1042,
+      "attribute_id": 2,
+      "value": "Set of 30"
+    },
+    {
+      "product_id": 1042,
+      "attribute_id": 3,
+      "value": "Flexible Polypropylene"
+    },
+    {
+      "product_id": 1042,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1043,
+      "attribute_id": 1,
+      "value": "Natural Teak"
+    },
+    {
+      "product_id": 1043,
+      "attribute_id": 2,
+      "value": "Standard Height"
+    },
+    {
+      "product_id": 1043,
+      "attribute_id": 3,
+      "value": "Solid Hardwood"
+    },
+    {
+      "product_id": 1043,
+      "attribute_id": 4,
+      "value": "Professional"
+    },
+    {
+      "product_id": 1044,
+      "attribute_id": 1,
+      "value": "Galvanized Grey"
+    },
+    {
+      "product_id": 1044,
+      "attribute_id": 2,
+      "value": "Set of 2"
+    },
+    {
+      "product_id": 1044,
+      "attribute_id": 3,
+      "value": "Galvanized Iron"
+    },
+    {
+      "product_id": 1044,
+      "attribute_id": 4,
+      "value": "Professional"
+    },
+    {
+      "product_id": 1045,
+      "attribute_id": 1,
+      "value": "White/Orange Red"
+    },
+    {
+      "product_id": 1045,
+      "attribute_id": 2,
+      "value": "8 US"
+    },
+    {
+      "product_id": 1045,
+      "attribute_id": 3,
+      "value": "Mesh Upper / Gum Rubber"
+    },
+    {
+      "product_id": 1045,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1046,
+      "attribute_id": 1,
+      "value": "Charcoal Black"
+    },
+    {
+      "product_id": 1046,
+      "attribute_id": 2,
+      "value": "Pair"
+    },
+    {
+      "product_id": 1046,
+      "attribute_id": 3,
+      "value": "Elasticated Knit"
+    },
+    {
+      "product_id": 1046,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1047,
+      "attribute_id": 1,
+      "value": "Electric Blue"
+    },
+    {
+      "product_id": 1047,
+      "attribute_id": 2,
+      "value": "80x40 cm"
+    },
+    {
+      "product_id": 1047,
+      "attribute_id": 3,
+      "value": "Microfiber Matrix"
+    },
+    {
+      "product_id": 1047,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1048,
+      "attribute_id": 1,
+      "value": "Vibrant Green"
+    },
+    {
+      "product_id": 1048,
+      "attribute_id": 2,
+      "value": "One Size"
+    },
+    {
+      "product_id": 1048,
+      "attribute_id": 3,
+      "value": "Elastic Polyester"
+    },
+    {
+      "product_id": 1048,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1049,
+      "attribute_id": 1,
+      "value": "Hi-Vis Orange"
+    },
+    {
+      "product_id": 1049,
+      "attribute_id": 2,
+      "value": "50 Meters"
+    },
+    {
+      "product_id": 1049,
+      "attribute_id": 3,
+      "value": "Fiberglass / ABS"
+    },
+    {
+      "product_id": 1049,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1050,
+      "attribute_id": 1,
+      "value": "White/Black"
+    },
+    {
+      "product_id": 1050,
+      "attribute_id": 2,
+      "value": "Size 5"
+    },
+    {
+      "product_id": 1050,
+      "attribute_id": 3,
+      "value": "Polyurethane"
+    },
+    {
+      "product_id": 1050,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1051,
+      "attribute_id": 1,
+      "value": "Neon Red"
+    },
+    {
+      "product_id": 1051,
+      "attribute_id": 2,
+      "value": "10 US"
+    },
+    {
+      "product_id": 1051,
+      "attribute_id": 3,
+      "value": "Synthetic Matrix Upper"
+    },
+    {
+      "product_id": 1051,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1052,
+      "attribute_id": 1,
+      "value": "Electric Blue"
+    },
+    {
+      "product_id": 1052,
+      "attribute_id": 2,
+      "value": "Size 9"
+    },
+    {
+      "product_id": 1052,
+      "attribute_id": 3,
+      "value": "Latex / Neoprene"
+    },
+    {
+      "product_id": 1052,
+      "attribute_id": 4,
+      "value": "Professional"
+    },
+    {
+      "product_id": 1053,
+      "attribute_id": 1,
+      "value": "Matte Black"
+    },
+    {
+      "product_id": 1053,
+      "attribute_id": 2,
+      "value": "Medium"
+    },
+    {
+      "product_id": 1053,
+      "attribute_id": 3,
+      "value": "Carbon Fiber Matrix"
+    },
+    {
+      "product_id": 1053,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1054,
+      "attribute_id": 1,
+      "value": "Multi-color Accent"
+    },
+    {
+      "product_id": 1054,
+      "attribute_id": 2,
+      "value": "Set of 20"
+    },
+    {
+      "product_id": 1054,
+      "attribute_id": 3,
+      "value": "LDPE Plastic"
+    },
+    {
+      "product_id": 1054,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1055,
+      "attribute_id": 1,
+      "value": "Classic White"
+    },
+    {
+      "product_id": 1055,
+      "attribute_id": 2,
+      "value": "24x8 ft"
+    },
+    {
+      "product_id": 1055,
+      "attribute_id": 3,
+      "value": "Twisted Polypropylene"
+    },
+    {
+      "product_id": 1055,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1056,
+      "attribute_id": 1,
+      "value": "Charcoal Grey"
+    },
+    {
+      "product_id": 1056,
+      "attribute_id": 2,
+      "value": "Portable Length"
+    },
+    {
+      "product_id": 1056,
+      "attribute_id": 3,
+      "value": "Aluminium Shaft"
+    },
+    {
+      "product_id": 1056,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1057,
+      "attribute_id": 1,
+      "value": "Midnight Chrome"
+    },
+    {
+      "product_id": 1057,
+      "attribute_id": 2,
+      "value": "Wired XLR"
+    },
+    {
+      "product_id": 1057,
+      "attribute_id": 3,
+      "value": "Alloy Steel / Zinc"
+    },
+    {
+      "product_id": 1057,
+      "attribute_id": 4,
+      "value": "Professional"
+    },
+    {
+      "product_id": 1058,
+      "attribute_id": 1,
+      "value": "Matte Black"
+    },
+    {
+      "product_id": 1058,
+      "attribute_id": 2,
+      "value": "Over-Ear"
+    },
+    {
+      "product_id": 1058,
+      "attribute_id": 3,
+      "value": "Polymer / Memory Foam"
+    },
+    {
+      "product_id": 1058,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1059,
+      "attribute_id": 1,
+      "value": "Solid Black"
+    },
+    {
+      "product_id": 1059,
+      "attribute_id": 2,
+      "value": "6-inch Screen"
+    },
+    {
+      "product_id": 1059,
+      "attribute_id": 3,
+      "value": "Double Mesh Nylon"
+    },
+    {
+      "product_id": 1059,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1060,
+      "attribute_id": 1,
+      "value": "Satin Black"
+    },
+    {
+      "product_id": 1060,
+      "attribute_id": 2,
+      "value": "Adjustable Height"
+    },
+    {
+      "product_id": 1060,
+      "attribute_id": 3,
+      "value": "Reinforced Steel"
+    },
+    {
+      "product_id": 1060,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1061,
+      "attribute_id": 1,
+      "value": "Charcoal Foam"
+    },
+    {
+      "product_id": 1061,
+      "attribute_id": 2,
+      "value": "Arc Shield"
+    },
+    {
+      "product_id": 1061,
+      "attribute_id": 3,
+      "value": "Acoustic Polyurethane"
+    },
+    {
+      "product_id": 1061,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1062,
+      "attribute_id": 1,
+      "value": "Pocket Silver"
+    },
+    {
+      "product_id": 1062,
+      "attribute_id": 2,
+      "value": "LCD Display"
+    },
+    {
+      "product_id": 1062,
+      "attribute_id": 3,
+      "value": "ABS Housing"
+    },
+    {
+      "product_id": 1062,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1063,
+      "attribute_id": 1,
+      "value": "Braided Tweed Gold"
+    },
+    {
+      "product_id": 1063,
+      "attribute_id": 2,
+      "value": "15 Feet"
+    },
+    {
+      "product_id": 1063,
+      "attribute_id": 3,
+      "value": "Copper / Fabric"
+    },
+    {
+      "product_id": 1063,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1064,
+      "attribute_id": 1,
+      "value": "72-Color Palette"
+    },
+    {
+      "product_id": 1064,
+      "attribute_id": 2,
+      "value": "Tin Case Set"
+    },
+    {
+      "product_id": 1064,
+      "attribute_id": 3,
+      "value": "Cedar Wood / Wax"
+    },
+    {
+      "product_id": 1064,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1065,
+      "attribute_id": 1,
+      "value": "Kraft Brown Cover"
+    },
+    {
+      "product_id": 1065,
+      "attribute_id": 2,
+      "value": "A4 Size / 120 Pages"
+    },
+    {
+      "product_id": 1065,
+      "attribute_id": 3,
+      "value": "200GSM Cotton Paper"
+    },
+    {
+      "product_id": 1065,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1066,
+      "attribute_id": 1,
+      "value": "Oiled Beechwood"
+    },
+    {
+      "product_id": 1066,
+      "attribute_id": 2,
+      "value": "Floor Standing"
+    },
+    {
+      "product_id": 1066,
+      "attribute_id": 3,
+      "value": "Solid Beechwood"
+    },
+    {
+      "product_id": 1066,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1067,
+      "attribute_id": 1,
+      "value": "Assorted Thickness"
+    },
+    {
+      "product_id": 1067,
+      "attribute_id": 2,
+      "value": "9-Piece Pack"
+    },
+    {
+      "product_id": 1067,
+      "attribute_id": 3,
+      "value": "Polymer Housing"
+    },
+    {
+      "product_id": 1067,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1068,
+      "attribute_id": 1,
+      "value": "48-Color Set"
+    },
+    {
+      "product_id": 1068,
+      "attribute_id": 2,
+      "value": "Carry Case Organizer"
+    },
+    {
+      "product_id": 1068,
+      "attribute_id": 3,
+      "value": "Plastic / Alcohol Base"
+    },
+    {
+      "product_id": 1068,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1069,
+      "attribute_id": 1,
+      "value": "Off-White paper"
+    },
+    {
+      "product_id": 1069,
+      "attribute_id": 2,
+      "value": "6-Piece Set"
+    },
+    {
+      "product_id": 1069,
+      "attribute_id": 3,
+      "value": "Compressed Paper"
+    },
+    {
+      "product_id": 1069,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1070,
+      "attribute_id": 1,
+      "value": "12 Gradient Shades"
+    },
+    {
+      "product_id": 1070,
+      "attribute_id": 2,
+      "value": "H to 8B Range"
+    },
+    {
+      "product_id": 1070,
+      "attribute_id": 3,
+      "value": "Premium Graphite/Wood"
+    },
+    {
+      "product_id": 1070,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1071,
+      "attribute_id": 1,
+      "value": "Blue/Yellow Panel"
+    },
+    {
+      "product_id": 1071,
+      "attribute_id": 2,
+      "value": "Size 5"
+    },
+    {
+      "product_id": 1071,
+      "attribute_id": 3,
+      "value": "Composite Microfiber"
+    },
+    {
+      "product_id": 1071,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1072,
+      "attribute_id": 1,
+      "value": "Tarpaulin Border"
+    },
+    {
+      "product_id": 1072,
+      "attribute_id": 2,
+      "value": "32x3 ft Standard"
+    },
+    {
+      "product_id": 1072,
+      "attribute_id": 3,
+      "value": "Polyethylene / Steel"
+    },
+    {
+      "product_id": 1072,
+      "attribute_id": 4,
+      "value": "Professional"
+    },
+    {
+      "product_id": 1073,
+      "attribute_id": 1,
+      "value": "Midnight Black"
+    },
+    {
+      "product_id": 1073,
+      "attribute_id": 2,
+      "value": "Large Fits All"
+    },
+    {
+      "product_id": 1073,
+      "attribute_id": 3,
+      "value": "Neoprene Foam Composite"
+    },
+    {
+      "product_id": 1073,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1074,
+      "attribute_id": 1,
+      "value": "Red/White Stripe"
+    },
+    {
+      "product_id": 1074,
+      "attribute_id": 2,
+      "value": "1.8 Meters"
+    },
+    {
+      "product_id": 1074,
+      "attribute_id": 3,
+      "value": "Fiberglass Matrix"
+    },
+    {
+      "product_id": 1074,
+      "attribute_id": 4,
+      "value": "Professional"
+    },
+    {
+      "product_id": 1075,
+      "attribute_id": 1,
+      "value": "Chrome Metallic"
+    },
+    {
+      "product_id": 1075,
+      "attribute_id": 2,
+      "value": "30-Ball Capacity"
+    },
+    {
+      "product_id": 1075,
+      "attribute_id": 3,
+      "value": "Steel / Canvas Bag"
+    },
+    {
+      "product_id": 1075,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1076,
+      "attribute_id": 1,
+      "value": "High-Vis Orange"
+    },
+    {
+      "product_id": 1076,
+      "attribute_id": 2,
+      "value": "Finger Grip Style"
+    },
+    {
+      "product_id": 1076,
+      "attribute_id": 3,
+      "value": "Molded ABS"
+    },
+    {
+      "product_id": 1076,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1077,
+      "attribute_id": 1,
+      "value": "Pure Bleached White"
+    },
+    {
+      "product_id": 1077,
+      "attribute_id": 2,
+      "value": "3-Roll Pack"
+    },
+    {
+      "product_id": 1077,
+      "attribute_id": 3,
+      "value": "100% Medical Cotton"
+    },
+    {
+      "product_id": 1077,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1078,
+      "attribute_id": 1,
+      "value": "Sonic Yellow Black"
+    },
+    {
+      "product_id": 1078,
+      "attribute_id": 2,
+      "value": "Size 9 US"
+    },
+    {
+      "product_id": 1078,
+      "attribute_id": 3,
+      "value": "Aluminum / Polyurethane"
+    },
+    {
+      "product_id": 1078,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1079,
+      "attribute_id": 1,
+      "value": "Pastel Teal Mint"
+    },
+    {
+      "product_id": 1079,
+      "attribute_id": 2,
+      "value": "Size 7 US"
+    },
+    {
+      "product_id": 1079,
+      "attribute_id": 3,
+      "value": "Synthetic Leather / PVC"
+    },
+    {
+      "product_id": 1079,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1080,
+      "attribute_id": 1,
+      "value": "Matte Slate Grey"
+    },
+    {
+      "product_id": 1080,
+      "attribute_id": 2,
+      "value": "Medium Adjust"
+    },
+    {
+      "product_id": 1080,
+      "attribute_id": 3,
+      "value": "ABS Shell / EPS Liner"
+    },
+    {
+      "product_id": 1080,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1081,
+      "attribute_id": 1,
+      "value": "Stealth All Black"
+    },
+    {
+      "product_id": 1081,
+      "attribute_id": 2,
+      "value": "Large Adult"
+    },
+    {
+      "product_id": 1081,
+      "attribute_id": 3,
+      "value": "Nylon Shell / EVA Foam"
+    },
+    {
+      "product_id": 1081,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1082,
+      "attribute_id": 1,
+      "value": "Gold Shields"
+    },
+    {
+      "product_id": 1082,
+      "attribute_id": 2,
+      "value": "16-Piece Pack"
+    },
+    {
+      "product_id": 1082,
+      "attribute_id": 3,
+      "value": "Chrome Alloy Steel"
+    },
+    {
+      "product_id": 1082,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1083,
+      "attribute_id": 1,
+      "value": "Translucent Crimson"
+    },
+    {
+      "product_id": 1083,
+      "attribute_id": 2,
+      "value": "54mm / 99A Hardness"
+    },
+    {
+      "product_id": 1083,
+      "attribute_id": 3,
+      "value": "Premium Polyurethane"
+    },
+    {
+      "product_id": 1083,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1084,
+      "attribute_id": 1,
+      "value": "Solid Black Handle"
+    },
+    {
+      "product_id": 1084,
+      "attribute_id": 2,
+      "value": "Pocket Universal"
+    },
+    {
+      "product_id": 1084,
+      "attribute_id": 3,
+      "value": "Hardened Steel / Plastic"
+    },
+    {
+      "product_id": 1084,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1085,
+      "attribute_id": 1,
+      "value": "Traditional White"
+    },
+    {
+      "product_id": 1085,
+      "attribute_id": 2,
+      "value": "Size 4 / 170cm"
+    },
+    {
+      "product_id": 1085,
+      "attribute_id": 3,
+      "value": "100% Bleached Cotton Canvas"
+    },
+    {
+      "product_id": 1085,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1086,
+      "attribute_id": 1,
+      "value": "Competition Red"
+    },
+    {
+      "product_id": 1086,
+      "attribute_id": 2,
+      "value": "Medium"
+    },
+    {
+      "product_id": 1086,
+      "attribute_id": 3,
+      "value": "PU Leather / Injection Foam"
+    },
+    {
+      "product_id": 1086,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1087,
+      "attribute_id": 1,
+      "value": "Competition Blue"
+    },
+    {
+      "product_id": 1087,
+      "attribute_id": 2,
+      "value": "Large"
+    },
+    {
+      "product_id": 1087,
+      "attribute_id": 3,
+      "value": "Synthetic Matrix / High Foam"
+    },
+    {
+      "product_id": 1087,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1088,
+      "attribute_id": 1,
+      "value": "Solid Midnight Black"
+    },
+    {
+      "product_id": 1088,
+      "attribute_id": 2,
+      "value": "280 cm Length"
+    },
+    {
+      "product_id": 1088,
+      "attribute_id": 3,
+      "value": "100% Woven Cotton"
+    },
+    {
+      "product_id": 1088,
+      "attribute_id": 4,
+      "value": "Professional"
+    },
+    {
+      "product_id": 1089,
+      "attribute_id": 1,
+      "value": "Black/White Target"
+    },
+    {
+      "product_id": 1089,
+      "attribute_id": 2,
+      "value": "Standard Strike"
+    },
+    {
+      "product_id": 1089,
+      "attribute_id": 3,
+      "value": "Heavy Vinyl / Dense Foam"
+    },
+    {
+      "product_id": 1089,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1090,
+      "attribute_id": 1,
+      "value": "Clear Translucent"
+    },
+    {
+      "product_id": 1090,
+      "attribute_id": 2,
+      "value": "Adult Universal"
+    },
+    {
+      "product_id": 1090,
+      "attribute_id": 3,
+      "value": "Food-grade EVA Material"
+    },
+    {
+      "product_id": 1090,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1091,
+      "attribute_id": 1,
+      "value": "Yellow Level Low"
+    },
+    {
+      "product_id": 1091,
+      "attribute_id": 2,
+      "value": "Standard Block"
+    },
+    {
+      "product_id": 1091,
+      "attribute_id": 3,
+      "value": "High Impact Structural ABS"
+    },
+    {
+      "product_id": 1091,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1092,
+      "attribute_id": 1,
+      "value": "Mirrored Silver"
+    },
+    {
+      "product_id": 1092,
+      "attribute_id": 2,
+      "value": "Adult Racing Fit"
+    },
+    {
+      "product_id": 1092,
+      "attribute_id": 3,
+      "value": "Silicone / Polycarbonate"
+    },
+    {
+      "product_id": 1092,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1093,
+      "attribute_id": 1,
+      "value": "Volt Yellow"
+    },
+    {
+      "product_id": 1093,
+      "attribute_id": 2,
+      "value": "Universal Elastic"
+    },
+    {
+      "product_id": 1093,
+      "attribute_id": 3,
+      "value": "High-grade Silicone"
+    },
+    {
+      "product_id": 1093,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1094,
+      "attribute_id": 1,
+      "value": "Ocean Blue Accent"
+    },
+    {
+      "product_id": 1094,
+      "attribute_id": 2,
+      "value": "Standard Flare"
+    },
+    {
+      "product_id": 1094,
+      "attribute_id": 3,
+      "value": "High-density EVA Foam"
+    },
+    {
+      "product_id": 1094,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1095,
+      "attribute_id": 1,
+      "value": "Black Blue Combo"
+    },
+    {
+      "product_id": 1095,
+      "attribute_id": 2,
+      "value": "Medium (7-8 US)"
+    },
+    {
+      "product_id": 1095,
+      "attribute_id": 3,
+      "value": "Natural Flexible Rubber"
+    },
+    {
+      "product_id": 1095,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1096,
+      "attribute_id": 1,
+      "value": "Deep Navy Blue"
+    },
+    {
+      "product_id": 1096,
+      "attribute_id": 2,
+      "value": "Large Shoulder Tote"
+    },
+    {
+      "product_id": 1096,
+      "attribute_id": 3,
+      "value": "Reinforced Polyester Mesh"
+    },
+    {
+      "product_id": 1096,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1097,
+      "attribute_id": 1,
+      "value": "Aqua Blue Teal"
+    },
+    {
+      "product_id": 1097,
+      "attribute_id": 2,
+      "value": "2-Pair Set"
+    },
+    {
+      "product_id": 1097,
+      "attribute_id": 3,
+      "value": "Soft Hypoallergenic Silicone"
+    },
+    {
+      "product_id": 1097,
+      "attribute_id": 4,
+      "value": "Beginner"
+    },
+    {
+      "product_id": 1098,
+      "attribute_id": 1,
+      "value": "Neon Yellow Frame"
+    },
+    {
+      "product_id": 1098,
+      "attribute_id": 2,
+      "value": "Medium Size"
+    },
+    {
+      "product_id": 1098,
+      "attribute_id": 3,
+      "value": "Rigid Polypropylene / Rubber"
+    },
+    {
+      "product_id": 1098,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    },
+    {
+      "product_id": 1099,
+      "attribute_id": 1,
+      "value": "Neon Green"
+    },
+    {
+      "product_id": 1099,
+      "attribute_id": 2,
+      "value": "9 US"
+    },
+    {
+      "product_id": 1099,
+      "attribute_id": 3,
+      "value": "Synthetic Mesh"
+    },
+    {
+      "product_id": 1099,
+      "attribute_id": 4,
+      "value": "Advanced"
+    },
+    {
+      "product_id": 1100,
+      "attribute_id": 1,
+      "value": "Safety Orange"
+    },
+    {
+      "product_id": 1100,
+      "attribute_id": 2,
+      "value": "6-Pack"
+    },
+    {
+      "product_id": 1100,
+      "attribute_id": 3,
+      "value": "PVC"
+    },
+    {
+      "product_id": 1100,
+      "attribute_id": 4,
+      "value": "Intermediate"
+    }
+  ]
+}

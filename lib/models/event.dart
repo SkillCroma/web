@@ -8,6 +8,8 @@ class Event {
   final String startTime;
   final String endTime;
   final String location;
+  final String state;
+  final String sport;
 
   Event({
     required this.id,
@@ -19,6 +21,8 @@ class Event {
     required this.startTime,
     required this.endTime,
     required this.location,
+    required this.state,
+    required this.sport,
   });
 
   factory Event.fromJson(Map<String, dynamic> json) {
@@ -32,6 +36,8 @@ class Event {
       startTime: json['startTime'],
       endTime: json['endTime'],
       location: json['location'],
+      state: json['state'],
+      sport: json['sport'],
     );
   }
 }

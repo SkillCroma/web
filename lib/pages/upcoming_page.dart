@@ -28,9 +28,11 @@ class _UpcomingPageState extends State<UpcomingPage> {
 
   List<Event> _allEvents = [];
   List<Event> _filteredEvents = [];
-  final List<String> _locations = ['All Locations'];
+  final List<String> _states = ['All States'];
+  final List<String> _sports = ['All Sports'];
 
-  String _selectedLocation = 'All Locations';
+  String _selectedState = 'All States';
+  String _selectedSport = 'All Sports';
   String _searchQuery = '';
   int _displayCount = 10;
   bool _isLoading = true;
@@ -58,22 +60,29 @@ class _UpcomingPageState extends State<UpcomingPage> {
       );
       final List<dynamic> data = json.decode(response);
 
+      if (!mounted) return;
       setState(() {
         _allEvents = data.map((json) => Event.fromJson(json)).toList();
 
         // Sort by upcoming (closest timestamp first)
         _allEvents.sort((a, b) => a.timestamp.compareTo(b.timestamp));
 
-        // Extract unique locations
-        final Set<String> uniqueLocations = _allEvents
-            .map((e) => e.location)
+        // Extract unique states and sports
+        final Set<String> uniqueStates = _allEvents
+            .map((e) => e.state)
             .toSet();
-        _locations.addAll(uniqueLocations.toList()..sort());
+        _states.addAll(uniqueStates.toList()..sort());
+
+        final Set<String> uniqueSports = _allEvents
+            .map((e) => e.sport)
+            .toSet();
+        _sports.addAll(uniqueSports.toList()..sort());
 
         _applyFilters();
         _isLoading = false;
       });
     } catch (e) {
+      if (!mounted) return;
       setState(() {
         _isLoading = false;
       });
@@ -87,10 +96,13 @@ class _UpcomingPageState extends State<UpcomingPage> {
         final matchesSearch =
             event.title.toLowerCase().contains(_searchQuery) ||
             event.description.toLowerCase().contains(_searchQuery);
-        final matchesLocation =
-            _selectedLocation == 'All Locations' ||
-            event.location == _selectedLocation;
-        return matchesSearch && matchesLocation;
+        final matchesState =
+            _selectedState == 'All States' ||
+            event.state == _selectedState;
+        final matchesSport =
+            _selectedSport == 'All Sports' ||
+            event.sport == _selectedSport;
+        return matchesSearch && matchesState && matchesSport;
       }).toList();
       _displayCount = 10; // Reset display count on filter change
     });
@@ -125,28 +137,70 @@ class _UpcomingPageState extends State<UpcomingPage> {
       body: ListView(
         controller: _scrollController,
         children: [
+          ClipRect(
+            child: Stack(
+              children: [
+                AnimatedBuilder(
+                  animation: _scrollController,
+                  builder: (context, child) {
+                    double offset = _scrollController.hasClients ? _scrollController.offset : 0;
+                    return Transform.translate(
+                      offset: Offset(0, offset * 0.5),
+                      child: child,
+                    );
+                  },
+                  child: Image.asset(
+                    'assets/common/About_Image_1.png',
+                    width: size.width,
+                    fit: BoxFit.cover,
+                    height: 300,
+                  ),
+                ),
+                Container(
+                  height: 300,
+                  width: size.width,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.bottomCenter,
+                      end: Alignment.topCenter,
+                      colors: [colorScheme.surface, Colors.transparent],
+                    ),
+                  ),
+                ),
+                Positioned(
+                  bottom: 24,
+                  left: isDesktop ? 80 : 24,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Upcoming Events",
+                        style: textTheme.displaySmall?.copyWith(
+                          fontWeight: FontWeight.bold,
+                          color: colorScheme.onSurface,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        "Discover and register for the latest sports events and competitions.",
+                        style: textTheme.titleLarge?.copyWith(
+                          color: colorScheme.onSurfaceVariant,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
           Padding(
             padding: EdgeInsets.symmetric(
               horizontal: isDesktop ? 80 : 24,
-              vertical: 48,
+              vertical: 24,
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Header
-                Text(
-                  "Upcoming Events",
-                  style: textTheme.displaySmall?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                const SizedBox(height: 16),
-                Text(
-                  "Discover and register for the latest workshops, masterclasses, and networking sessions.",
-                  style: textTheme.titleLarge?.copyWith(
-                    color: colorScheme.onSurfaceVariant,
-                  ),
-                ),
                 const SizedBox(height: 48),
 
                 // Search and Filter Bar
@@ -223,7 +277,7 @@ class _UpcomingPageState extends State<UpcomingPage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Filter by Location",
+                          "Filter by State & Sport",
                           style: textTheme.titleLarge?.copyWith(
                             fontWeight: FontWeight.bold,
                           ),
@@ -235,18 +289,44 @@ class _UpcomingPageState extends State<UpcomingPage> {
                       ],
                     ),
                     const SizedBox(height: 24),
+                    Text("State", style: textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold)),
+                    const SizedBox(height: 12),
                     Wrap(
                       spacing: 8,
                       runSpacing: 12,
-                      children: _locations.map((location) {
-                        final isSelected = _selectedLocation == location;
+                      children: _states.map((state) {
+                        final isSelected = _selectedState == state;
                         return ChoiceChip(
-                          label: Text(location),
+                          label: Text(state),
                           selected: isSelected,
                           onSelected: (selected) {
                             if (selected) {
                               setStateOverlay(() {
-                                _selectedLocation = location;
+                                _selectedState = state;
+                              });
+                            }
+                          },
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                        );
+                      }).toList(),
+                    ),
+                    const SizedBox(height: 24),
+                    Text("Sport", style: textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold)),
+                    const SizedBox(height: 12),
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 12,
+                      children: _sports.map((sport) {
+                        final isSelected = _selectedSport == sport;
+                        return ChoiceChip(
+                          label: Text(sport),
+                          selected: isSelected,
+                          onSelected: (selected) {
+                            if (selected) {
+                              setStateOverlay(() {
+                                _selectedSport = sport;
                               });
                             }
                           },
@@ -263,10 +343,12 @@ class _UpcomingPageState extends State<UpcomingPage> {
                         TextButton(
                           onPressed: () {
                             setStateOverlay(() {
-                              _selectedLocation = 'All Locations';
+                              _selectedState = 'All States';
+                              _selectedSport = 'All Sports';
                             });
                             setState(() {
-                              _selectedLocation = 'All Locations';
+                              _selectedState = 'All States';
+                              _selectedSport = 'All Sports';
                               _applyFilters();
                             });
                           },
@@ -369,7 +451,7 @@ class _UpcomingPageState extends State<UpcomingPage> {
             ),
             const SizedBox(height: 8),
             Text(
-              "Try adjusting your search or location filter.",
+              "Try adjusting your search, state or sport filter.",
               style: textTheme.bodyLarge?.copyWith(
                 color: colorScheme.onSurfaceVariant,
               ),

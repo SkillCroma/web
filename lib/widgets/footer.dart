@@ -40,9 +40,10 @@ class Footer extends StatelessWidget {
                         children: [
                           Text(
                             "SKILLCROMA",
-                            style: textTheme.displayMedium?.copyWith(
+                            style: textTheme.displayLarge?.copyWith(
                               fontWeight: FontWeight.w900,
-                              letterSpacing: 1.5,
+                              fontSize: 72,
+                              letterSpacing: 2.0,
                             ),
                           ),
                           const SizedBox(height: 16),
@@ -68,7 +69,7 @@ class Footer extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(height: 24),
-                          FooterLink(label: "Programmes", page: PageName.programmes),
+                          FooterLink(label: "Upcoming events", page: PageName.upcoming),
                           const SizedBox(height: 8),
                           FooterLink(label: "Products", page: PageName.products),
                           const SizedBox(height: 8),
@@ -108,9 +109,10 @@ class Footer extends StatelessWidget {
                       children: [
                         Text(
                           "SKILLCROMA",
-                          style: textTheme.displayMedium?.copyWith(
+                          style: textTheme.displayLarge?.copyWith(
                             fontWeight: FontWeight.w900,
-                            letterSpacing: 1.5,
+                            fontSize: 48,
+                            letterSpacing: 2.0,
                           ),
                         ),
                         const SizedBox(height: 16),
@@ -133,7 +135,7 @@ class Footer extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 24),
-                        FooterLink(label: "Programmes", page: PageName.programmes),
+                        FooterLink(label: "Upcoming events", page: PageName.upcoming),
                         const SizedBox(height: 8),
                         FooterLink(label: "Products", page: PageName.products),
                         const SizedBox(height: 8),

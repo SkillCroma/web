@@ -48,30 +48,72 @@ class _LeaderboardPageState extends State<LeaderboardPage> {
       body: ListView(
         controller: _scrollController,
         children: [
+          ClipRect(
+            child: Stack(
+              children: [
+                AnimatedBuilder(
+                  animation: _scrollController,
+                  builder: (context, child) {
+                    double offset = _scrollController.hasClients ? _scrollController.offset : 0;
+                    return Transform.translate(
+                      offset: Offset(0, offset * 0.5),
+                      child: child,
+                    );
+                  },
+                  child: Image.asset(
+                    'assets/common/About_Image_2.png',
+                    width: size.width,
+                    fit: BoxFit.cover,
+                    height: 300,
+                  ),
+                ),
+                Container(
+                  height: 300,
+                  width: size.width,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.bottomCenter,
+                      end: Alignment.topCenter,
+                      colors: [colorScheme.surface, Colors.transparent],
+                    ),
+                  ),
+                ),
+                Positioned(
+                  bottom: 24,
+                  left: isDesktop ? 80 : 24,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Leaderboard",
+                        style: textTheme.displaySmall?.copyWith(
+                          fontWeight: FontWeight.bold,
+                          color: colorScheme.onSurface,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        "Top-performing athletes at SkillCroma.",
+                        style: textTheme.titleLarge?.copyWith(
+                          color: colorScheme.onSurfaceVariant,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
           Center(
             child: Container(
               constraints: const BoxConstraints(maxWidth: 1200),
               padding: EdgeInsets.symmetric(
                 horizontal: isDesktop ? 80 : 24,
-                vertical: 48,
+                vertical: 24,
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Header
-                  Text(
-                    "Leaderboard",
-                    style: textTheme.displaySmall?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-                  Text(
-                    "Top-performing athletes at SkillCroma, consistently training and progressing toward their professional goals.",
-                    style: textTheme.titleLarge?.copyWith(
-                      color: colorScheme.onSurfaceVariant,
-                    ),
-                  ),
                   const SizedBox(height: 48),
 
                   // Leaderboard Container

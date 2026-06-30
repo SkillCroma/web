@@ -55,9 +55,9 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
                 isCurrentPage: currentPage == PageName.home,
               ),
               NavBarLinks(
-                label: "News",
-                page: PageName.news,
-                isCurrentPage: currentPage == PageName.news,
+                label: "Products",
+                page: PageName.products,
+                isCurrentPage: currentPage == PageName.products,
               ),
               NavBarLinks(
                 label: "Upcoming",
@@ -93,8 +93,8 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
                     child: Text('Home'),
                   ),
                   PopupMenuItem<PageName>(
-                    value: PageName.news,
-                    child: Text('News'),
+                    value: PageName.products,
+                    child: Text('Products'),
                   ),
                   PopupMenuItem<PageName>(
                     value: PageName.upcoming,

@@ -9,7 +9,6 @@ import 'package:skillcroma/models/athlete.dart';
 // Widgets
 import 'package:skillcroma/widgets/leaderboard/athlete_row.dart';
 import 'package:skillcroma/widgets/leaderboard/skeleton_leaderboard.dart';
-import 'package:skillcroma/widgets/common/search_filter_bar.dart';
 import 'package:skillcroma/widgets/common/pagination_controls.dart';
 
 class LeaderboardContainer extends StatefulWidget {
@@ -23,12 +22,14 @@ class _LeaderboardContainerState extends State<LeaderboardContainer> {
   List<Athlete> _allAthletes = [];
   List<Athlete> _filteredAthletes = [];
   final List<String> _locations = ['All States'];
+  final List<String> _sports = ['All Sports'];
   
   String _searchQuery = '';
   String _selectedLocation = 'All States';
+  String _selectedSport = 'All Sports';
   final TextEditingController _searchController = TextEditingController();
   
-  static const int _pageSize = 5;
+  static const int _pageSize = 20;
   int _currentPage = 1;
   bool _isLoading = true;
   bool _isFiltering = false;
@@ -59,7 +60,7 @@ class _LeaderboardContainerState extends State<LeaderboardContainer> {
     setState(() {
       _searchQuery = _searchController.text;
     });
-    _applyFilters();
+    _applyFilters(showFeedback: false);
   }
 
   Future<void> _loadAthletes() async {
@@ -78,9 +79,12 @@ class _LeaderboardContainerState extends State<LeaderboardContainer> {
       setState(() {
         _allAthletes = data.map((json) => Athlete.fromJson(json as Map<String, dynamic>)).toList();
 
-        // Extract unique locations
+        // Extract unique locations and sports
         final Set<String> uniqueLocations = _allAthletes.map((a) => a.state).toSet();
         _locations.addAll(uniqueLocations.toList()..sort());
+
+        final Set<String> uniqueSports = _allAthletes.map((a) => a.sport).toSet();
+        _sports.addAll(uniqueSports.toList()..sort());
 
         _applyFilters(showFeedback: false);
         _isLoading = false;
@@ -106,9 +110,10 @@ class _LeaderboardContainerState extends State<LeaderboardContainer> {
     // DSA Optimized Search (simple iteration since dataset is small)
     _filteredAthletes = _allAthletes.where((athlete) {
       final matchesSearch = athlete.name.toLowerCase().contains(_searchQuery.toLowerCase()) ||
-                            athlete.type.toLowerCase().contains(_searchQuery.toLowerCase());
+                            athlete.sport.toLowerCase().contains(_searchQuery.toLowerCase());
       final matchesLocation = _selectedLocation == 'All States' || athlete.state == _selectedLocation;
-      return matchesSearch && matchesLocation;
+      final matchesSport = _selectedSport == 'All Sports' || athlete.sport == _selectedSport;
+      return matchesSearch && matchesLocation && matchesSport;
     }).toList();
 
     // Reset to first page on filter change
@@ -124,96 +129,6 @@ class _LeaderboardContainerState extends State<LeaderboardContainer> {
     }
   }
 
-  void _showFilterDialog() {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return StatefulBuilder(
-          builder: (context, setStateOverlay) {
-            final textTheme = Theme.of(context).textTheme;
-
-            return Dialog(
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
-              child: Container(
-                constraints: const BoxConstraints(maxWidth: 400),
-                padding: const EdgeInsets.all(32.0),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Expanded(
-                          child: Text(
-                            "Filter by State",
-                            style: textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                        IconButton(
-                          icon: const Icon(Icons.close_rounded),
-                          onPressed: () => Navigator.pop(context),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 24),
-                    Wrap(
-                      spacing: 8,
-                      runSpacing: 12,
-                      children: _locations.map((location) {
-                        final isSelected = _selectedLocation == location;
-                        return ChoiceChip(
-                          label: Text(location),
-                          selected: isSelected,
-                          onSelected: (selected) {
-                            if (selected) {
-                              setStateOverlay(() {
-                                _selectedLocation = location;
-                              });
-                            }
-                          },
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                        );
-                      }).toList(),
-                    ),
-                    const SizedBox(height: 32),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        TextButton(
-                          onPressed: () {
-                            setStateOverlay(() {
-                              _selectedLocation = 'All States';
-                            });
-                            setState(() {
-                              _selectedLocation = 'All States';
-                              _applyFilters();
-                            });
-                            Navigator.pop(context);
-                          },
-                          child: const Text("Clear"),
-                        ),
-                        const SizedBox(width: 16),
-                        FilledButton(
-                          onPressed: () {
-                            setState(() {
-                              _applyFilters();
-                            });
-                            Navigator.pop(context);
-                          },
-                          child: const Text("Apply Filters"),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            );
-          },
-        );
-      },
-    );
-  }
 
   void _showSnackBar(String message, {bool isError = false}) {
     final colorScheme = Theme.of(context).colorScheme;
@@ -323,22 +238,247 @@ class _LeaderboardContainerState extends State<LeaderboardContainer> {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        // Header
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.center,
+        // Name Search & Autocomplete Region Filter Input
+        LayoutBuilder(
+          builder: (context, constraints) {
+            final isDesktop = constraints.maxWidth > 700;
+            return Flex(
+              direction: isDesktop ? Axis.horizontal : Axis.vertical,
+              crossAxisAlignment: isDesktop ? CrossAxisAlignment.center : CrossAxisAlignment.stretch,
+              children: [
+                // Name Search
+                Expanded(
+                  flex: isDesktop ? 3 : 0,
+                  child: TextField(
+                    controller: _searchController,
+                    decoration: InputDecoration(
+                      hintText: 'Search athletes by name...',
+                      prefixIcon: Icon(Icons.search_rounded, color: colorScheme.onSurfaceVariant),
+                      filled: true,
+                      fillColor: colorScheme.surfaceContainerHighest.withValues(alpha: 0.5),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(16),
+                        borderSide: BorderSide.none,
+                      ),
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 24, vertical: 18),
+                    ),
+                  ),
+                ),
+                SizedBox(width: isDesktop ? 16 : 0, height: isDesktop ? 0 : 16),
+                // Region Autocomplete Form Select
+                Expanded(
+                  flex: isDesktop ? 2 : 0,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: colorScheme.surfaceContainerHighest.withValues(alpha: 0.5),
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: Autocomplete<String>(
+                      initialValue: TextEditingValue(
+                        text: _selectedLocation == 'All States' ? '' : _selectedLocation,
+                      ),
+                      optionsBuilder: (TextEditingValue textEditingValue) {
+                        if (textEditingValue.text.isEmpty) {
+                          return _locations.where((l) => l != 'All States');
+                        }
+                        return _locations.where((String option) {
+                          return option.toLowerCase().contains(textEditingValue.text.toLowerCase()) && option != 'All States';
+                        });
+                      },
+                      onSelected: (String selection) {
+                        setState(() {
+                          _selectedLocation = selection;
+                          _applyFilters(showFeedback: false);
+                        });
+                      },
+                      fieldViewBuilder: (context, textEditingController, focusNode, onFieldSubmitted) {
+                        if (_selectedLocation == 'All States' && textEditingController.text.isNotEmpty) {
+                          textEditingController.clear();
+                        }
+                        return TextFormField(
+                          controller: textEditingController,
+                          focusNode: focusNode,
+                          decoration: InputDecoration(
+                            hintText: 'Search Region / State...',
+                            prefixIcon: Icon(Icons.location_on_rounded, color: colorScheme.onSurfaceVariant),
+                            suffixIcon: _selectedLocation != 'All States'
+                                ? IconButton(
+                                    icon: const Icon(Icons.clear_rounded),
+                                    onPressed: () {
+                                      textEditingController.clear();
+                                      setState(() {
+                                        _selectedLocation = 'All States';
+                                        _applyFilters(showFeedback: false);
+                                      });
+                                    },
+                                  )
+                                : null,
+                            border: InputBorder.none,
+                            contentPadding: const EdgeInsets.symmetric(horizontal: 24, vertical: 18),
+                          ),
+                        );
+                      },
+                      optionsViewBuilder: (context, onSelected, options) {
+                        return Align(
+                          alignment: Alignment.topLeft,
+                          child: Material(
+                            elevation: 4.0,
+                            borderRadius: BorderRadius.circular(12),
+                            color: colorScheme.surface,
+                            child: Container(
+                              width: 300,
+                              constraints: const BoxConstraints(maxHeight: 250),
+                              decoration: BoxDecoration(
+                                border: Border.all(color: colorScheme.outlineVariant),
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              child: ListView.builder(
+                                padding: EdgeInsets.zero,
+                                shrinkWrap: true,
+                                itemCount: options.length,
+                                itemBuilder: (BuildContext context, int index) {
+                                  final String option = options.elementAt(index);
+                                  return InkWell(
+                                    onTap: () => onSelected(option),
+                                    child: Padding(
+                                      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
+                                      child: Text(
+                                        option,
+                                        style: textTheme.bodyMedium,
+                                      ),
+                                    ),
+                                  );
+                                },
+                              ),
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ),
+              ],
+            );
+          },
+        ),
+        const SizedBox(height: 20),
+
+        // Active Filters chips & Reset All
+        if (_selectedLocation != 'All States' || _selectedSport != 'All Sports' || _searchQuery.isNotEmpty) ...[
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            children: [
+              Text(
+                'Active Filters:',
+                style: textTheme.bodySmall?.copyWith(fontWeight: FontWeight.bold, color: colorScheme.onSurfaceVariant),
+              ),
+              if (_searchQuery.isNotEmpty)
+                InputChip(
+                  label: Text('Search: "$_searchQuery"'),
+                  onDeleted: () {
+                    _searchController.clear();
+                  },
+                ),
+              if (_selectedLocation != 'All States')
+                InputChip(
+                  label: Text('Region: $_selectedLocation'),
+                  onDeleted: () {
+                    setState(() {
+                      _selectedLocation = 'All States';
+                      _applyFilters(showFeedback: false);
+                    });
+                  },
+                ),
+              if (_selectedSport != 'All Sports')
+                InputChip(
+                  label: Text('Sport: $_selectedSport'),
+                  onDeleted: () {
+                    setState(() {
+                      _selectedSport = 'All Sports';
+                      _applyFilters(showFeedback: false);
+                    });
+                  },
+                ),
+              TextButton(
+                onPressed: () {
+                  _searchController.clear();
+                  setState(() {
+                    _selectedLocation = 'All States';
+                    _selectedSport = 'All Sports';
+                    _applyFilters(showFeedback: false);
+                  });
+                },
+                child: const Text('Reset All', style: TextStyle(fontSize: 12)),
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+        ],
+
+        // Organized Sports Filtering Chips
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: SearchFilterBar(
-                searchController: _searchController,
-                searchHint: 'Search athletes...',
-                isLoading: _isFiltering,
-                onFilterTap: _showFilterDialog,
+            Padding(
+              padding: const EdgeInsets.only(left: 4.0, bottom: 8.0),
+              child: Row(
+                children: [
+                  Icon(Icons.sports_basketball_rounded, size: 16, color: colorScheme.primary),
+                  const SizedBox(width: 8),
+                  Text(
+                    'Filter by Sport Domain',
+                    style: textTheme.labelMedium?.copyWith(
+                      fontWeight: FontWeight.bold,
+                      color: colorScheme.onSurfaceVariant,
+                      letterSpacing: 0.5,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              padding: const EdgeInsets.symmetric(vertical: 4.0),
+              child: Row(
+                children: _sports.map((sport) {
+                  final isSelected = _selectedSport == sport;
+                  return Padding(
+                    padding: const EdgeInsets.only(right: 8.0),
+                    child: FilterChip(
+                      label: Text(sport),
+                      selected: isSelected,
+                      onSelected: (selected) {
+                        setState(() {
+                          _selectedSport = selected ? sport : 'All Sports';
+                          _applyFilters(showFeedback: false);
+                        });
+                      },
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                      selectedColor: colorScheme.primaryContainer,
+                      checkmarkColor: colorScheme.onPrimaryContainer,
+                    ),
+                  );
+                }).toList(),
               ),
             ),
           ],
         ),
-        const SizedBox(height: 32),
+        const SizedBox(height: 24),
+
+        // Matched counts info
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 4.0, vertical: 8.0),
+          child: Text(
+            'Found ${_filteredAthletes.length} athlete${_filteredAthletes.length == 1 ? '' : 's'} matching your filters',
+            style: textTheme.bodyMedium?.copyWith(
+              color: colorScheme.onSurfaceVariant,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+        const SizedBox(height: 12),
 
         // Table or Empty State
         _filteredAthletes.isEmpty
@@ -375,7 +515,7 @@ class _LeaderboardContainerState extends State<LeaderboardContainer> {
             ),
             const SizedBox(height: 8),
             Text(
-              "Try adjusting your search or state filter.",
+              "Try adjusting your search filters.",
               style: textTheme.bodyLarge?.copyWith(color: colorScheme.onSurfaceVariant),
             ),
           ],
@@ -388,7 +528,7 @@ class _LeaderboardContainerState extends State<LeaderboardContainer> {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: SizedBox(
-        width: 900,
+        width: 1000,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -400,9 +540,10 @@ class _LeaderboardContainerState extends State<LeaderboardContainer> {
                 children: [
                   _buildTableHeader('Rank', 1, textTheme, colorScheme),
                   _buildTableHeader('Name', 3, textTheme, colorScheme),
-                  _buildTableHeader('Type', 2, textTheme, colorScheme),
-                  _buildTableHeader('Credit', 2, textTheme, colorScheme),
-                  _buildTableHeader('State', 2, textTheme, colorScheme),
+                  _buildTableHeader('Age / Gender', 2, textTheme, colorScheme),
+                  _buildTableHeader('Sport', 2, textTheme, colorScheme),
+                  _buildTableHeader('Credit Points', 1, textTheme, colorScheme),
+                  _buildTableHeader('State / Region', 2, textTheme, colorScheme),
                 ],
               ),
             ),
@@ -411,8 +552,11 @@ class _LeaderboardContainerState extends State<LeaderboardContainer> {
 
             // Athletes
             ...List.generate(_currentPageAthletes.length, (index) {
+              final athlete = _currentPageAthletes[index];
+              final relativeRank = _filteredAthletes.indexOf(athlete) + 1;
               return AthleteRow(
-                athlete: _currentPageAthletes[index],
+                athlete: athlete,
+                displayRank: relativeRank,
                 index: index,
               );
             }),

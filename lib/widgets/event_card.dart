@@ -24,9 +24,7 @@ class EventCard extends StatelessWidget {
       ),
       clipBehavior: Clip.antiAlias,
       child: InkWell(
-        onTap: () {
-          // Future: Navigate to event details
-        },
+        onTap: () => _showMoreInfoDialog(context),
         hoverColor: colorScheme.onSurface.withValues(alpha: 0.04),
         splashColor: colorScheme.primary.withValues(alpha: 0.12),
         highlightColor: colorScheme.primary.withValues(alpha: 0.08),

@@ -3,11 +3,13 @@ import 'package:skillcroma/models/athlete.dart';
 
 class AthleteRow extends StatefulWidget {
   final Athlete athlete;
+  final int displayRank;
   final int index;
 
   const AthleteRow({
     super.key,
     required this.athlete,
+    required this.displayRank,
     required this.index,
   });
 
@@ -47,10 +49,10 @@ class _AthleteRowState extends State<AthleteRow> with SingleTickerProviderStateM
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
     final colorScheme = Theme.of(context).colorScheme;
-    final isTopThree = widget.athlete.rank <= 3;
+    final isTopThree = widget.displayRank <= 3;
 
     Color getRankColor() {
-      switch (widget.athlete.rank) {
+      switch (widget.displayRank) {
         case 1:
           return const Color(0xFFFFD700);
         case 2:
@@ -60,6 +62,14 @@ class _AthleteRowState extends State<AthleteRow> with SingleTickerProviderStateM
         default:
           return colorScheme.onSurface;
       }
+    }
+
+    String getRankString() {
+      final rank = widget.displayRank;
+      if (rank == 1) return '1st';
+      if (rank == 2) return '2nd';
+      if (rank == 3) return '3rd';
+      return '${rank}th';
     }
 
     return FadeTransition(
@@ -99,7 +109,7 @@ class _AthleteRowState extends State<AthleteRow> with SingleTickerProviderStateM
                       scale: _isHovering ? 1.1 : 1.0,
                       duration: const Duration(milliseconds: 200),
                       child: Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                         decoration: isTopThree
                             ? BoxDecoration(
                                 color: getRankColor(),
@@ -113,12 +123,28 @@ class _AthleteRowState extends State<AthleteRow> with SingleTickerProviderStateM
                                 ],
                               )
                             : null,
-                        child: Text(
-                          widget.athlete.rankString,
-                          style: textTheme.titleMedium?.copyWith(
-                            color: isTopThree ? Colors.black : colorScheme.onSurface,
-                            fontWeight: FontWeight.w900,
-                          ),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              getRankString(),
+                              style: textTheme.titleMedium?.copyWith(
+                                color: isTopThree ? Colors.black : colorScheme.onSurface,
+                                fontWeight: FontWeight.w900,
+                              ),
+                            ),
+                            if (widget.athlete.rank != widget.displayRank) ...[
+                              const SizedBox(height: 2),
+                              Text(
+                                'Overall #${widget.athlete.rank}',
+                                style: textTheme.bodySmall?.copyWith(
+                                  fontSize: 10,
+                                  color: isTopThree ? Colors.black87 : colorScheme.onSurfaceVariant,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ],
+                          ],
                         ),
                       ),
                     ),
@@ -152,9 +178,26 @@ class _AthleteRowState extends State<AthleteRow> with SingleTickerProviderStateM
                 Expanded(
                   flex: 2,
                   child: Center(
+                    child: Text(
+                      widget.athlete.age != null && widget.athlete.gender != null
+                          ? '${widget.athlete.age}y / ${widget.athlete.gender}'
+                          : widget.athlete.age != null
+                              ? '${widget.athlete.age}y'
+                              : widget.athlete.gender ?? '-',
+                      style: textTheme.bodyMedium?.copyWith(
+                        color: colorScheme.onSurfaceVariant,
+                        fontWeight: FontWeight.w600,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ),
+                Expanded(
+                  flex: 2,
+                  child: Center(
                     child: Chip(
                       label: Text(
-                        widget.athlete.type,
+                        widget.athlete.sport,
                         style: textTheme.labelLarge?.copyWith(
                           color: colorScheme.onSecondaryContainer,
                         ),
@@ -166,7 +209,7 @@ class _AthleteRowState extends State<AthleteRow> with SingleTickerProviderStateM
                   ),
                 ),
                 Expanded(
-                  flex: 2,
+                  flex: 1,
                   child: Center(
                     child: Container(
                       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),

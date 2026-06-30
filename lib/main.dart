@@ -2,11 +2,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-// Pages
-import 'package:skillcroma/pages/leaderboard_page.dart';
-import 'package:skillcroma/pages/upcoming_page.dart';
-import 'package:skillcroma/pages/home_page.dart';
-import 'package:skillcroma/pages/news_page.dart';
+// Navigation
+import 'package:skillcroma/navigation/app_router.dart';
+import 'package:skillcroma/pages/home_page.dart'; // Needed for onUnknownRoute fallback
 
 // Theme
 import 'package:skillcroma/theme/theme.dart';
@@ -82,33 +80,11 @@ class SkillCromaWeb extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "SkillCroma",
       theme: theme.dark(),
-      initialRoute: PageName.home.name,
-      onGenerateRoute: (page) {
-        final routeName = page.name;
-        Widget pageWidget;
-
-        if (routeName == PageName.home.name) {
-          pageWidget = const HomePage();
-        } else if (routeName == PageName.news.name) {
-          pageWidget = const NewsPage();
-        } else if (routeName == PageName.upcoming.name) {
-          pageWidget = const UpcomingPage();
-        } else if (routeName == PageName.leaderboards.name) {
-          pageWidget = const LeaderboardPage();
-        } else {
-          return null;
-        }
-
-        return PageRouteBuilder(
-          pageBuilder: (context, animation, secondaryAnimation) => pageWidget,
-          transitionsBuilder: (context, animation, secondaryAnimation, child) {
-            return FadeTransition(
-              opacity: animation,
-              child: child,
-            );
-          },
-          transitionDuration: const Duration(milliseconds: 300),
-          reverseTransitionDuration: const Duration(milliseconds: 300),
+      initialRoute: PageName.home.route,
+      onGenerateRoute: AppRouter.onGenerateRoute,
+      onUnknownRoute: (settings) {
+        return MaterialPageRoute(
+          builder: (context) => const HomePage(),
         );
       },
     );

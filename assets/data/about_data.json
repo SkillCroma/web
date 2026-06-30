@@ -1,0 +1,39 @@
+{
+  "sports": {
+    "title": "About SkillCroma",
+    "paragraphs": [
+      "SkillCroma is a premier sports event and talent management platform dedicated to identifying, nurturing, and promoting genuine talent. We believe in providing a structured pathway for aspiring athletes through rigorous performance analysis and expert guidance.",
+      "Our mission is to create a robust ecosystem where athletes from various disciplines—cricket, basketball, chess, esports, football, and more—can showcase their skills and unlock professional opportunities."
+    ]
+  },
+  "business": {
+    "title": "About SkillCroma",
+    "paragraphs": [
+      "SkillCroma helps businesses grow faster with powerful marketing and advertising solutions.We understand that every business needs visibility, trust, and quality customers to succeed.Our team creates smart advertising strategies that attract the right audience and generate real leads.",
+      "We help brands build a strong online presence that increases customer engagement and business value.Through creative campaigns and modern marketing techniques, we drive consistent business growth. Our lead-generation systems are designed to bring potential customers directly to business owners.",
+      "SkillCroma focuses on delivering measurable results that support long-term success and higher revenue. We help businesses stand out in competitive markets with impactful branding and promotional strategies. Our mission is to transform small and growing businesses into trusted and recognized brands. With innovation, strategy, and dedication, we help our clients achieve unexpected levels of growth and income."
+    ]
+  },
+  "team": [
+    {
+      "name": "Mohit",
+      "role": "FOUNDER & CEO"
+    },
+    {
+      "name": "Chief",
+      "role": "CHIEF DESIGN OFFICER"
+    },
+    {
+      "name": "Person 1",
+      "role": "HEAD OF SPORTS TALENT"
+    },
+    {
+      "name": "Person 2",
+      "role": "LEAD ANALYST"
+    },
+    {
+      "name": "Person 3",
+      "role": "TECHNICAL DIRECTOR"
+    }
+  ]
+}

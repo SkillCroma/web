@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "quotes": [
+      "DON'T BE AVERAGE,",
+      "WHEN YOU HAVE FULL",
+      "POTENTIAL"
+    ],
+    "buttonText": "START FREE TRIAL",
+    "subtext": [
+      "Get 7 days free, then",
+      "3 Months for ₹ 1000/month"
+    ]
+  },
+  "about": {
+    "title": "About SkillCroma",
+    "quotes": [
+      "SPEED IS MORE",
+      "THAN MOTION; IT",
+      "IS INTELLIGENCE IN",
+      "ACTION"
+    ],
+    "description": "At SkillCroma, we believe every young young athlete deserves the right opportunity to shine.Many talented players have passion and potential but lack proper guidance and exposure.Our mission is to identify genuine talent through professional performance analysis and skill evaluation."
+  },
+  "stats": {
+    "title": "BY THE NUMBERS",
+    "subtitle": "Our proven track record speaks for itself. Join other organizations who have transformed their performance",
+    "items": [
+      {
+        "title": "20 +",
+        "subtitle": "Training Programmes",
+        "text": "Professional or Amateur Athelets trust our platform"
+      },
+      {
+        "title": "50 +",
+        "subtitle": "Championships",
+        "text": "Customized Programs for every Organizations and Skill Levels"
+      }
+    ]
+  }
+}
